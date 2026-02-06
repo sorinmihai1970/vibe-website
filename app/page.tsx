@@ -1,20 +1,20 @@
 /**
- * 🏠 HOME PAGE - Pagina principală a site-ului
+ * 🏠 HOME PAGE - VERSIUNEA STARTER PENTRU CURSANȚI
  *
- * Pentru cursanți:
- * - Aceasta este pagina principală (index/root)
- * - În Next.js, app/page.tsx = homepage (/)
- * - Importăm componentele și le afișăm în ordine
- * - Fragment (<></>) = wrapper invizibil (nu adaugă DIV extra în DOM)
+ * Aceasta este versiunea SIMPLĂ de la care plecăm.
+ * Doar 2 componente: Hero + Footer.
+ *
+ * În timpul cursului vom construi împreună:
+ * - Navigation (meniu navigare)
+ * - Features (carduri cu beneficii)
+ * - Menu (lista de produse)
+ * - About (secțiune despre noi)
+ * - Și multe altele!
  */
 
-// Importăm toate componentele create
-import Navigation from '@/components/Navigation';
-import Hero from '@/components/Hero';
-import Features from '@/components/Features';
-import Menu from '@/components/Menu';
-import About from '@/components/About';
-import Footer from '@/components/Footer';
+// Importăm componentele starter (versiuni simple)
+import HeroStarter from '@/components/HeroStarter';
+import FooterStarter from '@/components/FooterStarter';
 
 /**
  * 📄 COMPONENTA HOME
@@ -25,50 +25,37 @@ export default function Home() {
   return (
     <>
       {/*
-        🎯 STRUCTURA PAGINII
-        Ordinea componentelor:
-        0. Navigation (sticky) - Navigare persistentă modernă
-        1. Hero (full screen) - Prima impresie
-        2. Features (3 carduri) - Ce oferim
-        3. Menu (meniu complet cu produse) - Ce vindem
-        4. About (poveste + imagine) - Cine suntem
-        5. Footer (contact + social) - Info final
+        🎯 STRUCTURA MINIMALĂ
+        1. Hero (ecran principal cu titlu + CTA)
+        2. Footer (copyright)
+
+        MISIUNEA TA ÎN CURS:
+        Între Hero și Footer vom construi împreună toate secțiunile!
       */}
 
-      <Navigation />
-      <Hero />
-      <Features />
-      <Menu />
-      <About />
-      <Footer />
+      <HeroStarter />
+      <FooterStarter />
 
       {/*
-        PENTRU CURSANȚI - Explicații concepte:
+        📚 CONCEPTE DE ÎNVĂȚAT:
 
         1. COMPONENTE = bucăți reutilizabile de UI
-           - <Hero /> = componenta Hero (definită în components/Hero.tsx)
+           - <HeroStarter /> = componenta Hero (fișierul components/HeroStarter.tsx)
            - Fiecare componentă e ca un "custom HTML tag"
 
-        2. PROPS (deocamdată nu folosim)
-           - Props = date pe care le transmiți către componentă
-           - Exemplu: <Hero title="Titlu" subtitle="Subtitlu" />
-           - În viitor vom învăța să facem componente dinamice cu props
-
-        3. IMPORT/EXPORT
-           - import Hero from '@/components/Hero' = aduce componenta
+        2. IMPORT/EXPORT
+           - import HeroStarter from '@/components/HeroStarter' = aduce componenta
            - @ = alias pentru root folder (configurat în tsconfig.json)
            - export default = face componenta disponibilă pentru import
 
-        4. JSX
+        3. JSX = HTML în JavaScript
            - Acest cod arată ca HTML dar e JSX (JavaScript XML)
-           - JSX = sintaxă care permite HTML în JavaScript
-           - Compilatorul transformă JSX în JavaScript pur
+           - JSX permite să scrii markup direct în JavaScript
 
-        5. NEXT.JS ROUTING
+        4. NEXT.JS ROUTING
            - app/page.tsx = homepage (/)
            - app/despre/page.tsx = /despre
-           - app/contact/page.tsx = /contact
-           - Routing-ul e automat bazat pe structura folderelor!
+           - Routing automat bazat pe structura folderelor!
       */}
     </>
   );
