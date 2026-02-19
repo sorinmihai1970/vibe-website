@@ -1,5 +1,32 @@
 # Session Log
 
+## 2026-02-19 - Lecția 6.1: Barista Bot cu Claude AI
+
+### Ce s-a făcut
+- Knowledge base generat din Menu.tsx (28 produse, 6 categorii, prețuri corecte)
+- Personalitate aleasă: Barista Prieten (casual, emoji, 2-3 propoziții)
+- API endpoint rescris de la OpenAI la Anthropic Claude AI (claude-sonnet-4-5)
+- ChatWidget îmbunătățit: puls pe buton, animație slide-up, timestamps, full-screen mobil
+- SDK @anthropic-ai/sdk instalat
+- ANTHROPIC_API_KEY configurat în .env.local
+- Testat cu 5 întrebări - toate răspunsurile corecte
+- Ghiduri și prezentări (6.1, 6.2, 7.1) actualizate cu diacritice și diagrame ASCII
+
+### Ce rămâne
+- [ ] Lecția 6.2: Quick replies, link-uri active, reglaje, styling, deploy
+- [ ] Push pe GitHub (branch starter, 4 commits ahead)
+- [ ] Deploy pe Vercel cu ANTHROPIC_API_KEY
+
+### Commits
+- `1580eff` feat: Add Barista Bot chatbot with Claude AI integration
+
+### Decizii importante
+- Fișier nou lib/chatbot-knowledge.ts (nu am suprascris lib/knowledge-base.ts vechi)
+- Model: claude-sonnet-4-5-20250929, max 200 tokens
+- Personalitate: Barista Prieten (varianta 1 din 3 propuse)
+
+---
+
 ## 2026-02-15 - Demo Live 3.3: Admin Panel + Deploy Vercel
 
 ### Ce s-a făcut
