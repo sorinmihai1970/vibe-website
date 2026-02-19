@@ -1,6 +1,6 @@
 # GHID 8.1 - Aplicația ta "de arătat"
 > Ghid pas cu pas pentru Lecția 8.1
-> 7 comenzi | ~25 minute
+> 7 pași | ~25 minute
 > Cerință: Săptămâna 7 completată (polish + portofoliu generat)
 
 ---
@@ -20,7 +20,7 @@ Deschide Claude Code în VS Code.
 
 ---
 
-## COMANDA 1: Alege aplicația
+## Pasul 1: Alege aplicația
 
 Claude Code analizează cele 3 și te ajută să alegi.
 
@@ -44,7 +44,7 @@ O recomandare argumentată. Tu decizi - Claude Code doar sugerează.
 
 ---
 
-## COMANDA 2: Testul de 5 secunde
+## Pasul 2: Testul de 5 secunde
 
 Claude Code se uită la aplicație ca și cum ar fi prima dată.
 
@@ -62,7 +62,7 @@ Feedback sincer. Poate titlul e prea generic. Poate nu e clar ce face aplicația
 
 ---
 
-## COMANDA 3: Lista de fixuri
+## Pasul 3: Lista de fixuri
 
 Acum facem inventarul problemelor, în ordinea priorității.
 
@@ -80,7 +80,7 @@ O listă clară. Poate 3-5 lucruri, poate 10. Important e ordinea: stricat > con
 
 ---
 
-## COMANDA 4: Repară fix-urile
+## Pasul 4: Repară fix-urile
 
 Acum trecem la treabă.
 
@@ -102,7 +102,7 @@ Dacă sunt multe și nu vrei să le repari pe toate:
 
 ---
 
-## COMANDA 5: Before / After
+## Pasul 5: Before / After
 
 Documentăm ce s-a schimbat.
 
@@ -122,7 +122,7 @@ O listă cu before/after. Poți face și tu screenshot-uri din browser dacă vre
 
 ---
 
-## COMANDA 6: Test final
+## Pasul 6: Test final
 
 Verificăm că totul funcționează după schimbări.
 
@@ -146,7 +146,7 @@ Verificăm că totul funcționează după schimbări.
 
 ---
 
-## COMANDA 7: Push + Deploy final
+## Pasul 7: Push + Deploy final
 
 Punem versiunea finală online.
 
@@ -165,17 +165,17 @@ Deschide link-ul Vercel pe telefon. Asta e aplicația ta de arătat. Arată bine
 
 ---
 
-## Rezumat: Cele 7 comenzi
+## Rezumat: Cei 7 pași
 
-| # | Ce i-ai spus | Ce ai primit |
-|---|-------------|--------------|
-| 1 | "Care e cea mai bună pentru portofoliu?" | Recomandare argumentată |
-| 2 | "Privește-o ca prima dată" | Feedback prima impresie |
-| 3 | "Fă lista de fixuri" | Probleme prioritizate: stricat > confuz > urât |
-| 4 | "Repară fix-urile" | Îmbunătățiri aplicate |
-| 5 | "Descrie before/after" | Lista schimbărilor |
-| 6 | "Testează totul" | Confirmare că funcționează |
-| 7 | "Push + deploy" | Aplicația finală e online |
+| # | Ce faci | Ce primești |
+|---|---------|------------|
+| 1 | Alege aplicația | Recomandare argumentată |
+| 2 | Testul de 5 secunde | Feedback prima impresie |
+| 3 | Lista de fixuri | Probleme prioritizate: stricat > confuz > urât |
+| 4 | Repară fix-urile | Îmbunătățiri aplicate |
+| 5 | Before / After | Lista schimbărilor |
+| 6 | Test final | Confirmare că funcționează |
+| 7 | Push + Deploy final | Aplicația finală e online |
 
 ---
 
@@ -206,5 +206,6 @@ Deschide link-ul Vercel pe telefon. Asta e aplicația ta de arătat. Arată bine
 ---
 
 **Creat:** Februarie 2026
+**Actualizat:** 17 februarie 2026
 **Proiect:** Vibe Coding - Săptămâna 8
 **Temă:** Capstone & Închidere - Aplicația de arătat

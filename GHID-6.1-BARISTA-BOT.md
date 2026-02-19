@@ -1,6 +1,6 @@
 # GHID 6.1 - Barista Bot: Construcție Chatbot AI
 > Ghid pas cu pas pentru Lecția 6.1
-> 7 comenzi | ~45 minute
+> 7 pași | ~45 minute
 > Cerință: Site-ul Vibe Caffe funcțional + API key Anthropic în .env.local
 
 ---
@@ -18,14 +18,14 @@ Deschide fișierul `.env.local` și asigură-te că ai linia:
 ANTHROPIC_API_KEY=sk-ant-...cheia-ta...
 ```
 
-Dacă nu o ai, revino la Lecția 5.2, Comanda 3 pentru pași.
+Dacă nu o ai, revino la Lecția 5.2, Pasul 3 pentru instrucțiuni.
 
 **Ce vom face azi:**
 Construim un chatbot AI integrat în site-ul tău. La final, vizitatorii pot întreba chatbot-ul despre meniu, prețuri, recomandări.
 
 ---
 
-## COMANDA 1: Generează knowledge base din meniul tău
+## Pasul 1: Generează knowledge base din meniul tău
 
 Claude Code va citi meniul din site-ul tău și va crea automat baza de cunoștințe a chatbot-ului.
 
@@ -51,7 +51,7 @@ Exportă totul ca un string mare KNOWLEDGE_BASE pe care îl vom folosi în syste
 
 ---
 
-## COMANDA 2: Alege personalitatea chatbot-ului
+## Pasul 2: Alege personalitatea chatbot-ului
 
 Claude Code îți propune 3 variante de personalitate. Tu alegi care se potrivește brandului tău.
 
@@ -79,7 +79,7 @@ Vreau varianta [1/2/3]. Salvează personalitatea aleasă în knowledge-base.ts.
 
 ---
 
-## COMANDA 3: Construiește Chat Widget
+## Pasul 3: Construiește Chat Widget
 
 Acum construim ce vede utilizatorul - butonul de chat și fereastra de conversație.
 
@@ -104,7 +104,7 @@ Construiește o componentă ChatWidget.tsx care:
 
 ---
 
-## COMANDA 4: Adaugă mesajele vizuale
+## Pasul 4: Adaugă mesajele vizuale
 
 Acum facem fereastra de chat să arate bine - mesaje diferite pentru user și bot, animații.
 
@@ -129,7 +129,7 @@ Adaugă în ChatWidget:
 
 ---
 
-## COMANDA 5: Construiește API endpoint
+## Pasul 5: Construiește API endpoint
 
 Construim partea de server - endpoint-ul care trimite mesajele la Claude AI.
 
@@ -156,7 +156,7 @@ Construiește API endpoint POST /api/chat care:
 
 ---
 
-## COMANDA 6: Conectează chat-ul la AI
+## Pasul 6: Conectează chat-ul la AI
 
 Ultimul pas - legăm interfața de chat la API-ul real.
 
@@ -180,7 +180,7 @@ Conectează ChatWidget la API-ul /api/chat:
 
 ---
 
-## COMANDA 7: Testare conversație
+## Pasul 7: Testare conversație
 
 Testăm chatbot-ul cu întrebări reale.
 
@@ -224,6 +224,20 @@ Dacă vreun răspuns e greșit, ajustează.
 
 ---
 
+## Rezumat: Cei 7 pași
+
+| # | Ce faci | Ce se întâmplă |
+|---|---------|-----------------|
+| 1 | Generează knowledge base | Baza de cunoștințe din meniul tău |
+| 2 | Alege personalitatea | 3 variante, tu alegi |
+| 3 | Construiește Chat Widget | Buton + fereastră de chat |
+| 4 | Adaugă mesaje vizuale | Bubbles, typing indicator, auto-scroll |
+| 5 | Construiește API endpoint | Server → Claude AI |
+| 6 | Conectează chat-ul la AI | Conversație reală funcțională |
+| 7 | Testare conversație | Verifici cu 5 întrebări |
+
+---
+
 ## Recapitulare Lecția 6.1
 
 **Ce am construit:**
@@ -243,5 +257,6 @@ Dacă vreun răspuns e greșit, ajustează.
 ---
 
 **Creat:** Februarie 2026
+**Actualizat:** 17 februarie 2026
 **Proiect:** Vibe Coding - Săptămâna 6
 **Aplicație:** Barista Bot (chatbot AI pentru Vibe Caffe)

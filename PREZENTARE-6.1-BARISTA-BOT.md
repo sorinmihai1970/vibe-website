@@ -91,14 +91,14 @@ Claude Code vă va propune 3 variante de personalitate:
 ## SLIDE 6: Arhitectura chatbot-ului
 
 ```
-┌──────────────┐    ┌──────────────┐    ┌──────────────┐
-│  CHAT WIDGET │ →  │    API       │ →  │  CLAUDE AI   │
-│  (în site)   │    │  /api/chat   │    │  (Anthropic)  │
-│              │    │              │    │              │
-│  Input text  │    │  System      │    │  Înțelege    │
-│  Bubbles     │    │  prompt +    │    │  întrebarea  │
-│  Quick reply │    │  Knowledge   │    │  Răspunde    │
-└──────────────┘    └──────────────┘    └──────────────┘
++----------------+     +----------------+     +----------------+
+|  CHAT WIDGET   | --> |      API       | --> |   CLAUDE AI    |
+|  (in site)     |     |   /api/chat    |     |  (Anthropic)   |
+|                |     |                |     |                |
+|  Input text    |     |  System        |     |  Intelege      |
+|  Bubbles       |     |  prompt +      |     |  intrebarea    |
+|  Quick reply   |     |  Knowledge     |     |  Raspunde      |
++----------------+     +----------------+     +----------------+
 ```
 
 **3 piese:**
@@ -110,19 +110,19 @@ Claude Code vă va propune 3 variante de personalitate:
 
 ## SLIDE 7: Ce construim azi (pas cu pas)
 
-**Comanda 1:** Claude Code citește meniul și generează knowledge base
+**Pasul 1:** Claude Code citește meniul și generează knowledge base
 
-**Comanda 2:** Claude Code propune 3 personalități → tu alegi
+**Pasul 2:** Claude Code propune 3 personalități → tu alegi
 
-**Comanda 3:** Construim Chat Widget (buton + fereastră)
+**Pasul 3:** Construim Chat Widget (buton + fereastră)
 
-**Comanda 4:** Adăugăm mesajele vizuale (bubbles + typing indicator)
+**Pasul 4:** Adăugăm mesajele vizuale (bubbles + typing indicator)
 
-**Comanda 5:** Construim API endpoint cu Claude AI
+**Pasul 5:** Construim API endpoint cu Claude AI
 
-**Comanda 6:** Conectăm chat-ul la AI (mesaje reale)
+**Pasul 6:** Conectăm chat-ul la AI (mesaje reale)
 
-**Comanda 7:** Testare - întreabă chatbot-ul despre meniu
+**Pasul 7:** Testare - întreabă chatbot-ul despre meniu
 
 ---
 
@@ -135,7 +135,7 @@ Verifică în fișierul `.env.local`:
 ANTHROPIC_API_KEY=sk-ant-...cheia-ta...
 ```
 
-**Dacă nu îl ai:** Revino la pașii din Lecția 5.2, Comanda 3.
+**Dacă nu îl ai:** Revino la pașii din Lecția 5.2, Pasul 3.
 
 **Același API key funcționează** și pentru Vibe Budget (AI Coach) și pentru Barista Bot. Nu ai nevoie de altul.
 
@@ -145,9 +145,9 @@ ANTHROPIC_API_KEY=sk-ant-...cheia-ta...
 
 **Hai să construim chatbot-ul!**
 
-Urmăriți ghidul pas cu pas - 7 comenzi, ~45 minute.
+Urmăriți ghidul pas cu pas - 7 pași, ~45 minute.
 
-Deschideți Claude Code și începem cu Comanda 1.
+Deschideți Claude Code și începem cu Pasul 1.
 
 ---
 

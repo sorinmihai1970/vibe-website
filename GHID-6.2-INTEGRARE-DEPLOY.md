@@ -1,6 +1,6 @@
 # GHID 6.2 - Integrare, Reglaje și Deploy
 > Ghid pas cu pas pentru Lecția 6.2
-> 7 comenzi | ~40 minute
+> 7 pași | ~40 minute
 > Cerință: Lecția 6.1 completată (Chatbot funcțional de bază)
 
 ---
@@ -18,7 +18,7 @@ Adăugăm quick replies, link-uri active, reglaje, styling consistent cu site-ul
 
 ---
 
-## COMANDA 1: Adaugă quick replies
+## Pasul 1: Adaugă quick replies
 
 Butoanele rapide ajută utilizatorul să știe ce poate întreba.
 
@@ -44,7 +44,7 @@ Adaugă quick replies (butoane rapide) în ChatWidget:
 
 ---
 
-## COMANDA 2: Adaugă link-uri active
+## Pasul 2: Adaugă link-uri active
 
 Chatbot-ul trebuie să direcționeze spre pagini reale din site.
 
@@ -68,7 +68,7 @@ Actualizează system prompt-ul și knowledge base-ul ca chatbot-ul să:
 
 ---
 
-## COMANDA 3: Reglaje system prompt
+## Pasul 3: Reglaje system prompt
 
 Adăugăm limitări ca chatbot-ul să nu inventeze și să nu devieze.
 
@@ -94,7 +94,7 @@ Adaugă aceste reguli în system prompt:
 
 ---
 
-## COMANDA 4: Styling consistent cu site-ul
+## Pasul 4: Styling consistent cu site-ul
 
 Chat widget-ul trebuie să arate ca parte din site, nu ca un element străin.
 
@@ -119,7 +119,7 @@ Actualizează stilul ChatWidget ca să se potrivească cu designul site-ului:
 
 ---
 
-## COMANDA 5: Testare completă
+## Pasul 5: Testare completă
 
 Verificăm tot: meniu, recomandări, rezervări, limitări, styling.
 
@@ -148,7 +148,7 @@ Testează chatbot-ul complet:
 
 ---
 
-## COMANDA 6: Commit + Push pe GitHub
+## Pasul 6: Commit + Push pe GitHub
 
 Salvăm tot codul pe GitHub.
 
@@ -165,7 +165,7 @@ Mesajul de commit: "Add Barista Bot AI chatbot with knowledge base and quick rep
 
 ---
 
-## COMANDA 7: Deploy pe Vercel + Verificare finală
+## Pasul 7: Deploy pe Vercel + Verificare finală
 
 Punem chatbot-ul online!
 
@@ -206,6 +206,20 @@ Ajută-mă să fac deploy pe Vercel:
 
 ---
 
+## Rezumat: Cei 7 pași
+
+| # | Ce faci | Ce se întâmplă |
+|---|---------|-----------------|
+| 1 | Adaugă quick replies | Butoane rapide la deschidere + contextuale |
+| 2 | Adaugă link-uri active | Link-uri clickabile spre pagini din site |
+| 3 | Reglaje system prompt | Limitări clare, nu inventează |
+| 4 | Styling consistent | Chat widget se potrivește cu site-ul |
+| 5 | Testare completă | Verifici tot: quick replies, link-uri, limitări |
+| 6 | Commit + Push GitHub | Cod salvat pe GitHub |
+| 7 | Deploy pe Vercel | Chatbot-ul e live online |
+
+---
+
 ## Recapitulare Lecția 6.2
 
 **Ce am construit:**
@@ -235,5 +249,6 @@ Ajută-mă să fac deploy pe Vercel:
 ---
 
 **Creat:** Februarie 2026
+**Actualizat:** 17 februarie 2026
 **Proiect:** Vibe Coding - Săptămâna 6
 **Aplicație:** Barista Bot (chatbot AI pentru Vibe Caffe)

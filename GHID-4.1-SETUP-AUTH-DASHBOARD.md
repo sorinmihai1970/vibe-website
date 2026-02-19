@@ -10,13 +10,51 @@
 - VS Code cu Claude Code activ
 - Terminal deschis
 - Cont GitHub (pentru clonare repo)
+- Cont Supabase (gratuit - supabase.com)
 
 **CE VEI CONSTRUI:**
+- Proiect Supabase pentru baza de date
 - Sistem de autentificare (login + register)
 - Dashboard cu rezumat financiar
 - Structură aplicație pentru săptămânile 4-5
 
-**TIMP ESTIMAT:** 40-45 minute (clonare + plan mode + construcție)
+**TIMP ESTIMAT:** 50-60 minute (Supabase setup + clonare + plan mode + construcție)
+
+---
+
+## COMANDA 0: Creează proiectul Supabase (OBLIGATORIU!)
+
+**FOARTE IMPORTANT:** Fără acest pas, autentificarea nu va funcționa!
+
+Spune-i lui Claude Code:
+
+> **"Creează proiect Supabase pentru Vibe Budget."**
+
+**Ce face Claude Code:**
+- Creează proiect nou `vibe-budget` prin Supabase CLI
+- Configurează regiunea (West EU - Ireland)
+- Generează parolă DB automată
+- Îți arată URL-ul proiectului și cheile API
+
+**Ce aștepți să vezi:**
+- Mesaj: "Created a new project at https://supabase.com/dashboard/project/..."
+- Project URL (ceva ca `https://abc123xyz.supabase.co`)
+- Anon key (token lung)
+- Mesaj de confirmare: "Proiect Supabase creat cu succes!"
+
+**DURATĂ:** 2-3 minute (Supabase creează proiectul)
+
+**APOI (IMPORTANT - doar pentru demo):**
+
+După ce proiectul e creat, Claude Code o să te întrebe dacă vrei să dezactivezi confirmarea de email.
+
+Spune:
+
+> **"Da, dezactivează email confirmation pentru demo."**
+
+Claude Code va dezactiva automat setarea din Supabase Dashboard (pentru ca cursanții să poată testa mai ușor).
+
+**ACUM poți continua cu clonarea repo-ului!**
 
 ---
 
@@ -43,6 +81,28 @@ Dacă te întreabă unde să cloneze:
 - Folderul vibe-budget apare în VS Code
 - Fișiere: `app/`, `lib/`, `package.json`, etc.
 - Pagina de start (app/page.tsx) cu "Ce vom construi"
+
+---
+
+## COMANDA 1.5: Configurează Supabase în proiect
+
+După clonare, Claude Code o să vadă că lipsesc cheile Supabase din `.env.local`.
+
+**Spune-i lui Claude Code:**
+
+> **"Configurează proiectul Supabase creat în aplicație."**
+
+**Ce face Claude Code:**
+- Folosește cheile API din proiectul creat la COMANDA 0
+- Creează automat fișier `.env.local` cu URL-ul și anon key
+- Configurează conexiunea Supabase
+- Verifică că totul e conectat corect
+
+**Ce aștepți să vezi:**
+- Fișier `.env.local` creat în root
+- Mesaj de la Claude: "Supabase configurat cu succes!"
+
+**NU trebuie să copiezi manual nimic** - Claude Code știe cheile din proiectul creat anterior!
 
 ---
 
@@ -178,11 +238,13 @@ Spune-i lui Claude Code:
 
 ---
 
-## Rezumat: Cele 5 comenzi
+## Rezumat: Cele 6 comenzi
 
 | # | Ce i-ai spus | Ce a făcut |
 |---|--------------|------------|
+| 0 | (manual în Supabase Dashboard) | Creat proiect Supabase, dezactivat email confirmation |
 | 1 | "Clonează Vibe Budget, branch starter" | Clonat repo, deschis în VS Code |
+| 1.5 | "Am creat Supabase, configurează-l" + chei API | Creat `.env.local` cu cheile Supabase |
 | 2 | Activat plan mode + "Construim auth și dashboard" | Intrat în plan mode, analizat proiect, întrebat detalii |
 | 3 | "Perfect, execută planul" | Arătat planul (10-15 pași), așteptat aprobare |
 | 4 | (nimic - automat) | Executat planul pas cu pas (~15 min) |
@@ -203,9 +265,10 @@ Spune-i lui Claude Code:
 **"Serverul nu pornește - eroare dependencies"**
 → Spune-i: "Instalează tot ce lipsește" → Claude va rula `npm install`
 
-**"Dashboard arată 0 la toate"**
-→ E normal! Nu ai încă tranzacții, bănci, categorii
-→ Asta vine în Video 4.2 și 4.3
+**"Dashboard arată 0.00 RON la toate"**
+→ E COMPLET NORMAL! Nu ai încă tranzacții în baza de date
+→ Când adaugi tranzacții în Video 4.2-4.3, valorile vor apărea
+→ Dacă vezi 0.00 RON la toate cardurile → aplicația funcționează perfect!
 
 **"Vreau să văd planul din nou după ce a executat"**
 → Claude Code salvează planul - caută fișier `.claude/plans/` sau întreabă: "Arată-mi planul folosit"
@@ -218,14 +281,35 @@ Spune-i lui Claude Code:
 
 ## Ce ai acum
 
+✅ Proiect Supabase configurat și conectat
 ✅ Repo vibe-budget clonat cu fundație solidă (branch starter)
-✅ Sistem autentificare funcțional (register + login)
-✅ JWT token de sesiune (ești ținut logat)
-✅ Dashboard cu rezumat financiar (0 deocamdată)
+✅ Sistem autentificare funcțional cu Supabase Auth (register + login)
+✅ Session management automat (ești ținut logat)
+✅ Dashboard cu rezumat financiar (0.00 RON - normal fără tranzacții!)
 ✅ Design glassmorphism (teal + portocaliu)
 ✅ Structură pregătită pentru următoarele video-uri
 
 **URMĂTORUL PAS:** Video 4.2 - Adaugi băncile, categoriile și valutele (CRUD Managers).
+
+---
+
+## NOTE TEHNICE IMPORTANTE
+
+**De ce nu folosim API routes personalizate?**
+- Supabase Auth gestionează totul server-side
+- Nu trebuie să scriem bcrypt, JWT, session cookies manual
+- Frontend apelează direct `supabase.auth.signUp()` și `supabase.auth.signInWithPassword()`
+- Mai sigur, mai simplu, mai puține bug-uri
+
+**De ce stats arată 0.00 RON?**
+- Baza de date e goală (tocmai ai creat-o!)
+- În Video 4.2-4.3 vei adăuga tranzacții
+- Când adaugi prima tranzacție, stats-urile se vor actualiza automat
+
+**Diferența față de demo-ul din video:**
+- În video, proiectul Supabase exista deja (am făcut COMANDA 0 înainte)
+- La tine, tu l-ai creat acum (COMANDA 0 e nouă pentru cursanți)
+- Codul și flow-ul sunt identice după configurare!
 
 ---
 

@@ -26,22 +26,22 @@
 **Soluția:** Butoane rapide care sugerează întrebări.
 
 ```
-┌─────────────────────────────┐
-│ Barista Bot                 │
-│                             │
-│ Bună! Cu ce te pot ajuta?   │
-│                             │
-│ ┌──────────┐ ┌───────────┐  │
-│ │ Vezi meniu│ │Recomandări│  │
-│ └──────────┘ └───────────┘  │
-│ ┌──────────┐ ┌───────────┐  │
-│ │ Rezervări│ │  Program  │  │
-│ └──────────┘ └───────────┘  │
-│                             │
-│ ┌─────────────────────────┐ │
-│ │ Scrie un mesaj...       │ │
-│ └─────────────────────────┘ │
-└─────────────────────────────┘
++-------------------------------+
+| Barista Bot                   |
+|                               |
+| Buna! Cu ce te pot ajuta?     |
+|                               |
+| +------------+ +------------+ |
+| | Vezi meniu | | Recomandari| |
+| +------------+ +------------+ |
+| +------------+ +------------+ |
+| | Rezervari  | |  Program   | |
+| +------------+ +------------+ |
+|                               |
+| +---------------------------+ |
+| | Scrie un mesaj...         | |
+| +---------------------------+ |
++-------------------------------+
 ```
 
 **Quick replies apar:**
@@ -102,19 +102,19 @@ Când utilizatorul întreabă despre:
 
 ## SLIDE 6: Ce facem azi (pas cu pas)
 
-**Comanda 1:** Adăugăm quick replies (butoane rapide)
+**Pasul 1:** Adăugăm quick replies (butoane rapide)
 
-**Comanda 2:** Adăugăm link-uri active (rezervări, meniu)
+**Pasul 2:** Adăugăm link-uri active (rezervări, meniu)
 
-**Comanda 3:** Reglaje system prompt (limitări)
+**Pasul 3:** Reglaje system prompt (limitări)
 
-**Comanda 4:** Styling consistent cu site-ul
+**Pasul 4:** Styling consistent cu site-ul
 
-**Comanda 5:** Testare completă
+**Pasul 5:** Testare completă
 
-**Comanda 6:** Commit + Push pe GitHub
+**Pasul 6:** Commit + Push pe GitHub
 
-**Comanda 7:** Deploy pe Vercel + verificare finală
+**Pasul 7:** Deploy pe Vercel + verificare finală
 
 ---
 
@@ -140,9 +140,9 @@ Când utilizatorul întreabă despre:
 
 **Hai să finalizăm chatbot-ul!**
 
-Urmăriți ghidul pas cu pas - 7 comenzi, ~40 minute.
+Urmăriți ghidul pas cu pas - 7 pași, ~40 minute.
 
-Deschideți Claude Code și începem cu Comanda 1.
+Deschideți Claude Code și începem cu Pasul 1.
 
 ---
 

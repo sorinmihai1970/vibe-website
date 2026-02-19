@@ -1,6 +1,6 @@
 # GHID 7.2 - Polish rapid: texte, layout, deploy
 > Ghid pas cu pas pentru Lecția 7.2
-> 7 comenzi | ~25 minute
+> 7 pași | ~25 minute
 > Cerință: Lecția 7.1 completată (ai documentul de portofoliu)
 
 ---
@@ -20,7 +20,7 @@ Deschide Claude Code în folderul `vibe-website`.
 
 ---
 
-## COMANDA 1: Polish texte Vibe Caffe
+## Pasul 1: Polish texte Vibe Caffe
 
 Începem cu site-ul cafenelei. Claude Code citește tot site-ul și propune texte mai bune.
 
@@ -43,7 +43,7 @@ Titluri mai atractive, descrieri mai concise, butoane clare în română.
 
 ---
 
-## COMANDA 2: Polish layout Vibe Caffe
+## Pasul 2: Polish layout Vibe Caffe
 
 Acum verificăm cum arată pe telefon.
 
@@ -66,7 +66,7 @@ Site-ul arată bine și pe telefon, nu doar pe desktop.
 
 ---
 
-## COMANDA 3: Polish texte Vibe Budget
+## Pasul 3: Polish texte Vibe Budget
 
 Trecem la aplicația de gestiune financiară.
 
@@ -89,7 +89,7 @@ Mesaje ca "Te rugăm completează acest câmp" în loc de "Field required". Titl
 
 ---
 
-## COMANDA 4: Polish mesaje Barista Bot
+## Pasul 4: Polish mesaje Barista Bot
 
 Acum îmbunătățim cum vorbește chatbot-ul.
 
@@ -108,7 +108,7 @@ Chatbot-ul sună ca un om, nu ca un robot. Mesajul de bun venit te face să vrei
 
 ---
 
-## COMANDA 5: Test local - toate 3
+## Pasul 5: Test local - toate 3
 
 Pornim totul și verificăm.
 
@@ -135,7 +135,7 @@ Ambele aplicații rulează local. Textele sunt actualizate. Chatbot-ul funcțion
 
 ---
 
-## COMANDA 6: Commit + Push pe GitHub
+## Pasul 6: Commit + Push pe GitHub
 
 Salvăm tot pe GitHub. Golden Rule: Local → GitHub → Vercel.
 
@@ -157,7 +157,7 @@ Apoi:
 
 ---
 
-## COMANDA 7: Deploy pe Vercel + Verificare finală
+## Pasul 7: Deploy pe Vercel + Verificare finală
 
 Ultimul pas - punem totul online.
 
@@ -183,17 +183,17 @@ Dacă deploy-ul nu e automat:
 
 ---
 
-## Rezumat: Cele 7 comenzi
+## Rezumat: Cei 7 pași
 
-| # | Ce i-ai spus | Ce s-a schimbat |
-|---|-------------|-----------------|
-| 1 | "Polish texte Vibe Caffe" | Titluri, descrieri, butoane mai bune |
-| 2 | "Polish layout Vibe Caffe" | Responsive ok pe mobil |
-| 3 | "Polish texte Vibe Budget" | Mesaje în română, erori prietenoase |
-| 4 | "Polish mesaje Barista Bot" | Bun venit mai natural, quick replies mai bune |
-| 5 | "Test local toate 3" | Verificat că totul merge |
-| 6 | "Push pe GitHub" | Cod salvat pe ambele repo-uri |
-| 7 | "Deploy pe Vercel" | Totul live pe internet |
+| # | Ce faci | Ce se schimbă |
+|---|---------|---------------|
+| 1 | Polish texte Vibe Caffe | Titluri, descrieri, butoane mai bune |
+| 2 | Polish layout Vibe Caffe | Responsive ok pe mobil |
+| 3 | Polish texte Vibe Budget | Mesaje în română, erori prietenoase |
+| 4 | Polish mesaje Barista Bot | Bun venit mai natural, quick replies mai bune |
+| 5 | Test local toate 3 | Verificat că totul merge |
+| 6 | Push pe GitHub | Cod salvat pe ambele repo-uri |
+| 7 | Deploy pe Vercel | Totul live pe internet |
 
 ---
 
@@ -232,5 +232,6 @@ Dacă deploy-ul nu e automat:
 ---
 
 **Creat:** Februarie 2026
+**Actualizat:** 17 februarie 2026
 **Proiect:** Vibe Coding - Săptămâna 7
 **Temă:** Integrare & Polish - Polish UX & Copy

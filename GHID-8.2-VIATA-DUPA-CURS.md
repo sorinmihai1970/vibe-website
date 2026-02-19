@@ -1,6 +1,6 @@
 # GHID 8.2 - Viața după curs
 > Ghid pas cu pas pentru Lecția 8.2
-> 7 comenzi | ~20 minute
+> 7 pași | ~20 minute
 > Cerință: Lecția 8.1 completată (aplicația de arătat e online)
 > **Ultima lecție din curs.**
 
@@ -21,7 +21,7 @@ Deschide Claude Code în VS Code, în folderul `vibe-website`.
 
 ---
 
-## COMANDA 1: Checklist-ul personal
+## Pasul 1: Checklist-ul personal
 
 Transformăm experiența din curs într-un checklist reutilizabil.
 
@@ -39,7 +39,7 @@ Un checklist de ~10-15 pași, de la "Am o idee" la "Aplicația e online". Îl po
 
 ---
 
-## COMANDA 2: Protocol "Prima oră"
+## Pasul 2: Protocol "Prima oră"
 
 Ce faci în prima oră când începi un proiect nou de la zero.
 
@@ -58,7 +58,7 @@ Un ghid de ~1 pagină care te ia de mână: "Minut 0-5: creezi folderul. Minut 5
 
 ---
 
-## COMANDA 3: Scrisoarea de la viitorul tine
+## Pasul 3: Scrisoarea de la viitorul tine
 
 Tot ce știi acum, într-un document de referință.
 
@@ -77,7 +77,7 @@ Un document pe care îl deschizi peste 3 luni și zici: "A, da, acum îmi aminte
 
 ---
 
-## COMANDA 4: Portofoliu publicabil
+## Pasul 4: Portofoliu publicabil
 
 Actualizăm PORTOFOLIU.md ca să fie gata de arătat.
 
@@ -99,7 +99,7 @@ Un document pe care îl poți trimite cuiva și zice: "Uite ce am construit."
 
 ---
 
-## COMANDA 5: Text de post
+## Pasul 5: Text de post
 
 Claude Code scrie textul pe care îl postezi public.
 
@@ -117,7 +117,7 @@ Claude Code scrie textul pe care îl postezi public.
 
 ---
 
-## COMANDA 6: Proiectul de 30 de zile
+## Pasul 6: Proiectul de 30 de zile
 
 Ce construiești în continuare?
 
@@ -131,11 +131,11 @@ Ce construiești în continuare?
 - Fiecare adaugă ceva nou față de ce știi deja
 
 **Ce aștepți să vezi:**
-3 idei concrete. Nu "fă un ERP", ci "fă un site pentru [ceva ce te interesează pe tine]". Alegi una și începi cu protocolul de la Comanda 2.
+3 idei concrete. Nu "fă un ERP", ci "fă un site pentru [ceva ce te interesează pe tine]". Alegi una și începi cu protocolul de la Pasul 2.
 
 ---
 
-## COMANDA 7: Verificare finală
+## Pasul 7: Verificare finală
 
 Ultimul lucru: verificăm că totul e online.
 
@@ -153,17 +153,17 @@ Lista completă cu toate link-urile tale live. Asta e portofoliul tău.
 
 ---
 
-## Rezumat: Cele 7 comenzi
+## Rezumat: Cei 7 pași
 
-| # | Ce i-ai spus | Ce ai primit |
-|---|-------------|--------------|
-| 1 | "Checklist de la idee la app" | CHECKLIST-PERSONAL.md |
-| 2 | "Protocol prima oră" | PROTOCOL-PROIECT-NOU.md |
-| 3 | "Scrisoare de la viitorul meu" | SCRISOARE-VIITOR.md |
-| 4 | "Actualizează portofoliul" | PORTOFOLIU.md actualizat |
-| 5 | "Text de post" | 2 variante de post pentru LinkedIn/WhatsApp |
-| 6 | "3 idei de proiecte" | 3 proiecte mici pentru 30 de zile |
-| 7 | "Verificare finală" | Lista completă de link-uri live |
+| # | Ce faci | Ce primești |
+|---|---------|------------|
+| 1 | Checklist-ul personal | CHECKLIST-PERSONAL.md |
+| 2 | Protocol "Prima oră" | PROTOCOL-PROIECT-NOU.md |
+| 3 | Scrisoarea de la viitorul tine | SCRISOARE-VIITOR.md |
+| 4 | Portofoliu publicabil | PORTOFOLIU.md actualizat |
+| 5 | Text de post | 2 variante de post pentru LinkedIn/WhatsApp |
+| 6 | Proiectul de 30 de zile | 3 proiecte mici pentru 30 de zile |
+| 7 | Verificare finală | Lista completă de link-uri live |
 
 ---
 
@@ -182,7 +182,7 @@ Lista completă cu toate link-urile tale live. Asta e portofoliul tău.
 
 **"Publică-ți portofoliul."**
 
-Ia textul de la Comanda 5 și postează-l:
+Ia textul de la Pasul 5 și postează-l:
 - Pe LinkedIn
 - Pe WhatsApp
 - Pe unde vrei tu
@@ -214,5 +214,6 @@ Continuă.
 ---
 
 **Creat:** Februarie 2026
+**Actualizat:** 17 februarie 2026
 **Proiect:** Vibe Coding - Săptămâna 8
 **Temă:** Capstone & Închidere - Viața după curs

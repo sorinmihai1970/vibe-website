@@ -1,6 +1,6 @@
 # GHID 7.1 - Harta celor 5 stadii
 > Ghid pas cu pas pentru Lecția 7.1
-> 7 comenzi | ~20 minute
+> 7 pași | ~20 minute
 > Cerință: Cele 3 aplicații completate (Vibe Caffe, Vibe Budget, Barista Bot)
 
 ---
@@ -20,7 +20,7 @@ Deschide Claude Code în VS Code, în folderul `vibe-website`.
 
 ---
 
-## COMANDA 1: Analizează Vibe Caffe
+## Pasul 1: Analizează Vibe Caffe
 
 Hai să vedem ce ai construit în primul proiect.
 
@@ -39,7 +39,7 @@ Un rezumat clar cu tot ce conține site-ul tău. Probabil te va surprinde cât d
 
 ---
 
-## COMANDA 2: Analizează Vibe Budget
+## Pasul 2: Analizează Vibe Budget
 
 Acum ne uităm la a doua aplicație.
 
@@ -62,7 +62,7 @@ Un rezumat cu tot ce ai în aplicația de gestiune financiară.
 
 ---
 
-## COMANDA 3: Analizează Barista Bot
+## Pasul 3: Analizează Barista Bot
 
 Acum ne uităm la chatbot-ul integrat în site.
 
@@ -81,7 +81,7 @@ Un rezumat cu capabilitățile chatbot-ului tău.
 
 ---
 
-## COMANDA 4: Mapează pe cele 5 stadii
+## Pasul 4: Mapează pe cele 5 stadii
 
 Acum vine partea interesantă - punem totul pe hartă.
 
@@ -99,7 +99,7 @@ Un tabel cu 5 rânduri (stadiile) și 3 coloane (aplicațiile). Vei vedea cât d
 
 ---
 
-## COMANDA 5: Ce au în comun?
+## Pasul 5: Ce au în comun?
 
 Hai să scoatem lecțiile.
 
@@ -118,7 +118,7 @@ O listă cu lucrurile care s-au repetat. Concluzia: metoda e aceeași, doar apli
 
 ---
 
-## COMANDA 6: Ce e diferit?
+## Pasul 6: Ce e diferit?
 
 Acum cealaltă parte - diferențele.
 
@@ -136,7 +136,7 @@ O comparație clară a diferențelor. Vei vedea că fiecare model de aplicație 
 
 ---
 
-## COMANDA 7: Generează documentul de portofoliu
+## Pasul 7: Generează documentul de portofoliu
 
 Ultimul pas - un document care adună totul.
 
@@ -160,17 +160,17 @@ Un document frumos structurat pe care îl poți arăta oricui: "Uite ce am const
 
 ---
 
-## Rezumat: Cele 7 comenzi
+## Rezumat: Cei 7 pași
 
-| # | Ce i-ai spus | Ce ai primit |
-|---|-------------|--------------|
-| 1 | "Analizează Vibe Caffe" | Rezumat site: pagini, funcționalități |
-| 2 | "Analizează Vibe Budget" | Rezumat aplicație: date, funcționalități |
-| 3 | "Analizează Barista Bot" | Rezumat chatbot: knowledge, personalitate |
-| 4 | "Mapează pe 5 stadii" | Tabel comparativ CINE/CE/CU CE/CUM/FLUX |
-| 5 | "Ce au în comun?" | Pattern-uri repetitive, metoda comună |
-| 6 | "Ce e diferit?" | Complexitate diferită, ingrediente unice |
-| 7 | "Generează PORTOFOLIU.md" | Document personal cu cele 3 aplicații |
+| # | Ce faci | Ce primești |
+|---|---------|------------|
+| 1 | Analizează Vibe Caffe | Rezumat site: pagini, funcționalități |
+| 2 | Analizează Vibe Budget | Rezumat aplicație: date, funcționalități |
+| 3 | Analizează Barista Bot | Rezumat chatbot: knowledge, personalitate |
+| 4 | Mapează pe 5 stadii | Tabel comparativ CINE/CE/CU CE/CUM/FLUX |
+| 5 | Ce au în comun? | Pattern-uri repetitive, metoda comună |
+| 6 | Ce e diferit? | Complexitate diferită, ingrediente unice |
+| 7 | Generează PORTOFOLIU.md | Document personal cu cele 3 aplicații |
 
 ---
 
@@ -202,5 +202,6 @@ Un document frumos structurat pe care îl poți arăta oricui: "Uite ce am const
 ---
 
 **Creat:** Februarie 2026
+**Actualizat:** 17 februarie 2026
 **Proiect:** Vibe Coding - Săptămâna 7
 **Temă:** Integrare & Polish - Harta celor 5 stadii

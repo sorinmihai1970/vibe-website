@@ -40,12 +40,12 @@ Azi facem un pas înapoi și ne uităm la tot ce am creat - prin ochii metodei.
 Fiecare aplicație pe care ai construit-o a trecut prin aceleași 5 stadii, chiar dacă nu ai realizat:
 
 ```
-┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐
-│  CINE   │ →  │   CE    │ →  │  CU CE  │ →  │   CUM   │ →  │  FLUX   │
-│         │    │         │    │         │    │         │    │         │
-│ Roluri  │    │Aplicația│    │ Unelte  │    │ Metoda  │    │ Drumul  │
-│         │    │         │    │         │    │ de lucru│    │ codului │
-└─────────┘    └─────────┘    └─────────┘    └─────────┘    └─────────┘
++-----------+     +-----------+     +-----------+     +-----------+     +-----------+
+|   CINE    | --> |    CE     | --> |   CU CE   | --> |    CUM    | --> |   FLUX    |
+|           |     |           |     |           |     |           |     |           |
+|  Roluri   |     | Aplicatia |     |  Unelte   |     |  Metoda   |     |  Drumul   |
+|           |     |           |     |           |     | de lucru  |     |  codului  |
++-----------+     +-----------+     +-----------+     +-----------+     +-----------+
 ```
 
 **1. CINE** - Cine e implicat?
@@ -138,14 +138,14 @@ Metoda e aceeași indiferent de tipul aplicației.
 **Codul tău a urmat mereu același drum:**
 
 ```
-    TU (local)          GITHUB              VERCEL            CLIENT
-  ┌──────────┐      ┌──────────┐       ┌──────────┐      ┌──────────┐
-  │ Construi-│      │ Salvezi  │       │ Publici  │      │ Clientul │
-  │ ești cu  │  →   │ codul    │   →   │ pe       │  →   │ folosește│
-  │ Claude   │      │ online   │       │ internet │      │ aplicația│
-  │ Code     │      │          │       │          │      │          │
-  └──────────┘      └──────────┘       └──────────┘      └──────────┘
-    commit             push               deploy            online!
+   TU (local)          GITHUB             VERCEL            CLIENT
++------------+     +------------+     +------------+     +------------+
+| Construi-  |     | Salvezi    |     | Publici    |     | Clientul   |
+| esti cu    | --> | codul      | --> | pe         | --> | foloseste  |
+| Claude     |     | online     |     | internet   |     | aplicatia  |
+| Code       |     |            |     |            |     |            |
++------------+     +------------+     +------------+     +------------+
+   commit             push              deploy            online!
 ```
 
 **Golden Rule:** Local → GitHub → Vercel

@@ -1,5 +1,42 @@
 # Session Log
 
+## 2026-02-15 - Demo Live 3.3: Admin Panel + Deploy Vercel
+
+### Ce s-a făcut
+
+**Admin panel + API (din sesiunea anterioară, continuare):**
+- ✅ Creat `app/api/rezervari/route.ts` (PATCH status + DELETE)
+- ✅ Creat `app/admin/page.tsx` (tabel desktop, carduri mobil, filtre status, căutare)
+- ✅ Adus frontend complet din branch `main` pe `starter` (Navigation, Hero, Features, Menu, About, Footer)
+- ✅ Commit: `5d44cb7` - Add complete reservation system with admin panel
+- ✅ Push pe GitHub (branch `starter`)
+
+**Deploy Vercel:**
+- ✅ Actualizat cheile Supabase pe Vercel (Production) - proiectul nou `vibe-caffe` pe enifbusiness@gmail.com
+- ✅ Adăugat toate variabilele pe Preview environment (NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, OPENAI_API_KEY, OPENAI_MODEL) - fix pentru erori build pe branch starter
+- ✅ Deploy Production reușit: https://vibe-website-rho.vercel.app
+
+### Ce rămâne
+- [ ] Filmat video lead magnet Claude Code (~/vibe-oracle-demo)
+- [ ] Testat Sales Sparring Coach cu API key
+- [ ] Creat materiale Săptămâna 8 (Capstone) - plan existent
+
+### Commits
+- `5d44cb7` Add complete reservation system with admin panel (pushed)
+
+### Decizii importante
+
+**1. Vercel env vars - Production + Preview:**
+- Branch-ul `starter` face deploy pe Preview, nu Production
+- Cheile erau doar pe Production → build eșua pe Preview
+- Fix: adăugat toate 4 variabilele pe ambele environment-uri
+
+**2. Site-ul Vercel:**
+- Nume proiect: `vibe-website`
+- URL Production: https://vibe-website-rho.vercel.app
+
+---
+
 ## 2026-02-14 - Demo Live 3.1 + 3.2: Supabase + Formular Rezervări
 
 ### Ce s-a făcut

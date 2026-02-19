@@ -1,14 +1,14 @@
 'use client';
 
 /**
- * 🤖 CHAT WIDGET - Barista Bot pentru Vibe Coffee
+ * 🤖 CHAT WIDGET - Barista Bot pentru Vibe Caffe
  *
  * Componenta principală a chatbot-ului:
- * - Floating button (colț dreapta jos)
- * - Chat window cu mesaje
- * - Input pentru mesaje noi
- * - Typing indicator
- * - Quick replies
+ * - Floating button (colț dreapta jos) cu puls
+ * - Chat window cu animație slide-up
+ * - Mesaje cu timestamp
+ * - Full-screen pe mobil
+ * - Typing indicator + Quick replies
  */
 
 import { useState, useRef, useEffect } from 'react';
@@ -21,13 +21,19 @@ interface Message {
   quickReplies?: string[];
 }
 
+// Formatează ora (HH:MM)
+function formatTime(date: Date): string {
+  return date.toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit' });
+}
+
 export default function ChatWidget() {
   // 📊 STATE MANAGEMENT
   const [isOpen, setIsOpen] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: 'Salut! Sunt Vibe, asistentul tău virtual. Cu ce te pot ajuta astăzi?',
+      text: 'Salut! ☕ Sunt Vibe, barista ta virtuală. Cu ce te pot ajuta?',
       sender: 'bot',
       timestamp: new Date(),
       quickReplies: ['Vreau cafea!', 'Fac o rezervare', 'Văd meniul', 'Info despre voi'],
@@ -46,14 +52,35 @@ export default function ChatWidget() {
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages]);
+  }, [messages, isTyping]);
+
+  // 🎯 FOCUS INPUT CÂND SE DESCHIDE CHAT-UL
+  useEffect(() => {
+    if (isOpen) {
+      setTimeout(() => inputRef.current?.focus(), 300);
+    }
+  }, [isOpen]);
+
+  // 🎬 ANIMAȚIE DESCHIDERE/ÎNCHIDERE
+  const handleOpen = () => {
+    setIsOpen(true);
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 300);
+  };
+
+  const handleClose = () => {
+    setIsAnimating(true);
+    setTimeout(() => {
+      setIsOpen(false);
+      setIsAnimating(false);
+    }, 200);
+  };
 
   // 📝 TRIMITE MESAJ
   const handleSendMessage = async (text?: string) => {
     const messageText = text || inputValue.trim();
     if (!messageText) return;
 
-    // Adaugă mesajul utilizatorului
     const userMessage: Message = {
       id: Date.now().toString(),
       text: messageText,
@@ -66,21 +93,16 @@ export default function ChatWidget() {
     setIsTyping(true);
 
     try {
-      // 🚀 API CALL către OpenAI
       const response = await fetch('/api/chat', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message: messageText,
           conversationHistory: messages,
         }),
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to get response');
-      }
+      if (!response.ok) throw new Error('Failed to get response');
 
       const data = await response.json();
 
@@ -89,17 +111,15 @@ export default function ChatWidget() {
         text: data.response,
         sender: 'bot',
         timestamp: new Date(),
-        // Nu mai afișăm quick replies după mesajul inițial
       };
 
       setMessages((prev) => [...prev, botResponse]);
     } catch (error) {
       console.error('Chat error:', error);
 
-      // Fallback error message
       const errorMessage: Message = {
         id: Date.now().toString(),
-        text: 'Oops! 😅 Am avut o problemă tehnică. Poți încerca din nou sau sună-ne direct la 0721 234 567.',
+        text: 'Oops! 😅 Am avut o problemă tehnică. Poți încerca din nou sau sună-ne la 0721 234 567.',
         sender: 'bot',
         timestamp: new Date(),
         quickReplies: ['Încearcă din nou', 'Vezi meniul', 'Contact'],
@@ -111,7 +131,7 @@ export default function ChatWidget() {
     }
   };
 
-  // 🎯 HANDLE QUICK REPLY CLICK
+  // 🎯 HANDLE QUICK REPLY
   const handleQuickReply = (reply: string) => {
     handleSendMessage(reply);
   };
@@ -128,7 +148,14 @@ export default function ChatWidget() {
     <div className="fixed bottom-6 right-6 z-50">
       {/* 💬 CHAT WINDOW */}
       {isOpen && (
-        <div className="mb-4 w-96 h-[600px] bg-white dark:bg-gray-900 rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-gray-200 dark:border-gray-700">
+        <div
+          className={`mb-4 bg-white dark:bg-gray-900 shadow-2xl flex flex-col overflow-hidden border border-gray-200 dark:border-gray-700
+            fixed inset-0 md:relative md:inset-auto md:w-96 md:h-[600px] md:rounded-3xl
+            transition-all duration-300 ease-out
+            ${isAnimating && !isOpen ? 'opacity-0 translate-y-4 scale-95' : ''}
+            ${isAnimating && isOpen ? 'animate-slide-up' : ''}
+          `}
+        >
           {/* HEADER */}
           <div className="bg-gradient-to-r from-[#14B8A6] to-[#0D9488] text-white p-6 flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -140,11 +167,11 @@ export default function ChatWidget() {
               </div>
               <div>
                 <h3 className="font-bold text-lg">Vibe</h3>
-                <p className="text-sm text-white/80">Asistent virtual • Online</p>
+                <p className="text-sm text-white/80">Barista virtuală • Online</p>
               </div>
             </div>
             <button
-              onClick={() => setIsOpen(false)}
+              onClick={handleClose}
               className="text-white/80 hover:text-white transition-colors"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -169,10 +196,15 @@ export default function ChatWidget() {
                     }`}
                   >
                     <p className="text-sm whitespace-pre-line">{message.text}</p>
+                    <p className={`text-[10px] mt-1 ${
+                      message.sender === 'user' ? 'text-white/60' : 'text-gray-400'
+                    }`}>
+                      {formatTime(message.timestamp)}
+                    </p>
                   </div>
                 </div>
 
-                {/* QUICK REPLIES (doar pentru mesajele bot-ului) */}
+                {/* QUICK REPLIES */}
                 {message.sender === 'bot' && message.quickReplies && (
                   <div className="flex flex-wrap gap-2 mt-3 ml-2">
                     {message.quickReplies.map((reply, index) => (
@@ -213,7 +245,7 @@ export default function ChatWidget() {
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                onKeyPress={handleKeyPress}
+                onKeyDown={handleKeyPress}
                 placeholder="Scrie un mesaj..."
                 className="flex-1 px-4 py-3 rounded-full border-2 border-gray-200 dark:border-gray-600 focus:border-[#14B8A6] focus:outline-none text-sm text-gray-900 dark:text-gray-100 dark:bg-gray-800 placeholder:text-gray-400 dark:placeholder:text-gray-500"
               />
@@ -231,10 +263,12 @@ export default function ChatWidget() {
         </div>
       )}
 
-      {/* 🔘 FLOATING BUTTON */}
+      {/* 🔘 FLOATING BUTTON CU PULS */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-16 h-16 bg-gradient-to-br from-[#14B8A6] to-[#0D9488] text-white rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center text-3xl"
+        onClick={() => isOpen ? handleClose() : handleOpen()}
+        className={`w-16 h-16 bg-gradient-to-br from-[#14B8A6] to-[#0D9488] text-white rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center text-3xl
+          ${!isOpen ? 'animate-pulse-soft' : ''}
+        `}
       >
         {isOpen ? (
           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -248,7 +282,7 @@ export default function ChatWidget() {
         )}
       </button>
 
-      {/* NOTIFICATION BADGE (opțional - pentru mesaje noi) */}
+      {/* NOTIFICATION BADGE */}
       {!isOpen && (
         <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#F97316] text-white text-xs rounded-full flex items-center justify-center font-bold animate-pulse">
           1
