@@ -51,6 +51,10 @@ MENIU COMPLET:
 - Cinnamon Roll - 11 lei - Rulou cu scortisoara si glazura cream cheese. Ingrediente: Aluat dospit + scortisoara + glazura
 - Affogato - 21 lei - Inghetata vanilie afogata in espresso. Ingrediente: Espresso shot + bila inghetata vanilie
 
+LINKURI UTILE:
+- Meniu complet: [Vezi meniul complet](/#menu)
+- Rezervari: [Fa o rezervare](/rezervari)
+
 RECOMANDARI:
 - Cel mai popular: Cappuccino (16 lei) - alegerea clasica, cremos si aromat
 - Cel mai ieftin: Croissant Clasic (8 lei) - perfect pentru un snack rapid
