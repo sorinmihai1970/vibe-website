@@ -26,13 +26,13 @@ function getContextualReplies(botText: string): string[] | undefined {
   const text = botText.toLowerCase();
 
   if (text.includes('meniu') || text.includes('cafea') || text.includes('espresso') || text.includes('latte') || text.includes('cappuccino')) {
-    return ['Opțiuni vegane', 'Deserturi', 'Cafea rece'];
+    return ['Aveți ceva vegan?', 'Ce deserturi aveți?', 'Ceva rece?'];
   }
   if (text.includes('rezerv') || text.includes('masă') || text.includes('loc')) {
-    return ['Fă o rezervare', 'Program'];
+    return ['Vreau o masă', 'Când sunteți deschiși?'];
   }
   if (text.includes('program') || text.includes('orar') || text.includes('deschis') || text.includes('închis')) {
-    return ['Vezi meniu', 'Fă o rezervare'];
+    return ['Ce ai pe meniu?', 'Vreau o masă'];
   }
 
   return undefined;
@@ -70,10 +70,10 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: 'Salut! ☕ Sunt Vibe, barista ta virtuală. Cu ce te pot ajuta?',
+      text: 'Bună! ☕ Eu sunt Vibe, barista de aici. Ce-ți aduc?',
       sender: 'bot',
       timestamp: new Date(),
-      quickReplies: ['Vezi meniu', 'Recomandări', 'Rezervări', 'Program'],
+      quickReplies: ['Ce ai pe meniu?', 'Ce-mi recomanzi?', 'Vreau o masă', 'Când sunteți deschiși?'],
     },
   ]);
   const [inputValue, setInputValue] = useState('');
@@ -175,10 +175,10 @@ export default function ChatWidget() {
 
       const errorMessage: Message = {
         id: Date.now().toString(),
-        text: 'Oops! 😅 Am avut o problemă tehnică. Poți încerca din nou sau sună-ne la 0721 234 567.',
+        text: 'Hmm, s-a blocat ceva pe aici. 😅 Încearcă din nou sau sună-ne direct la 0721 234 567.',
         sender: 'bot',
         timestamp: new Date(),
-        quickReplies: ['Încearcă din nou', 'Vezi meniu', 'Contact'],
+        quickReplies: ['Încearcă din nou', 'Ce ai pe meniu?', 'Sună-ne'],
       };
 
       setMessages((prev) => [...prev, errorMessage]);
@@ -224,7 +224,7 @@ export default function ChatWidget() {
               </div>
               <div>
                 <h3 className="font-bold text-lg">Vibe</h3>
-                <p className="text-sm text-white/80">Barista virtuala • Online</p>
+                <p className="text-sm text-white/80">Barista ta • Online</p>
               </div>
             </div>
             <button
@@ -322,7 +322,7 @@ export default function ChatWidget() {
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyPress}
-                placeholder="Scrie un mesaj..."
+                placeholder="Întreabă-mă orice..."
                 className="flex-1 px-4 py-3 rounded-full border-2 border-gray-200 dark:border-gray-600 focus:border-[#8B6914] focus:outline-none text-sm text-gray-900 dark:text-gray-100 dark:bg-gray-800 placeholder:text-gray-400 dark:placeholder:text-gray-500"
               />
               <button

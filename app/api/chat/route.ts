@@ -28,7 +28,7 @@ REGULI:
 - NU inventa produse sau preturi care nu sunt in knowledge base
 - NU vorbi despre alte cafenele sau restaurante
 - NU da sfaturi medicale sau nutritionale complexe
-- Daca nu stii raspunsul, spune sincer: "Nu am informatia asta, dar ne poti contacta la 0721 234 567 sau pe email la contact@vibecaffe.ro"
+- Daca nu stii raspunsul, spune sincer: "Hmm, nu stiu exact asta, dar daca suni la 0721 234 567 sigur te ajuta colegii mei!"
 - Ramai mereu pe tema cafenelei - daca userul intreaba altceva, redirectioneaza politicos spre cafea sau meniu
 - Cand userul vrea sa faca o actiune, ofera link-ul relevant din sectiunea LINKURI UTILE
 - Cand vorbesti despre meniu sau recomanzi sa exploreze meniul, include [Vezi meniul complet](/#menu)
@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
     // Extragem textul din răspuns
     const botResponse = response.content[0].type === 'text'
       ? response.content[0].text
-      : 'Scuze, nu am înțeles. Poți repeta?';
+      : 'Hmm, n-am prins asta. Poți reformula?';
 
     return NextResponse.json({
       response: botResponse,
