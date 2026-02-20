@@ -65,20 +65,20 @@ export default function About() {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-              Pasiunea pentru cafea,{' '}
-              <span className="text-primary">din 2020</span>
+              Povestea noastră{' '}
+              <span className="text-primary">începe cu cafeaua</span>
             </h2>
 
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-              Vibe Coffee a început din dorința de a aduce experiența autentică
-              a cafelei de specialitate în inima orașului. Fiecare ceașcă este
-              pregătită cu grijă de bariștii noștri experimentați.
+              Am deschis Vibe Coffee pentru că ne lipsea un loc în oraș unde
+              cafeaua să fie la fel de bună ca atmosfera. Fiecare ceașcă e
+              pregătită de bariști cu experiență.
             </p>
 
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Colaborăm direct cu plantații din America de Sud și Africa,
-              selectând doar cele mai bune boabe, prăjite la perfecție pentru a
-              scoate în evidență notele unice de aromă.
+              Lucrăm direct cu plantații din America de Sud și Africa. Boabele
+              ajung la noi proaspete și le prăjim aici, pentru aromă la cel mai
+              bun nivel.
             </p>
 
             {/* LISTA cu stagger animation */}
@@ -116,7 +116,7 @@ export default function About() {
               href="/rezervari"
               className="inline-block px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
-              Programează o Vizită
+              Rezervă o masă
             </a>
           </div>
         </div>

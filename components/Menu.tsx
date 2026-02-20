@@ -352,10 +352,10 @@ export default function Menu() {
         {/* HEADER MENIU */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Meniul <span className="text-primary">nostru</span>
+            Alege-ți <span className="text-primary">cafeaua</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Cafea de specialitate, preparată cu grijă de bariștii noștri certificați
+            30 de preparate, de la espresso clasic la deserturi artizanale
           </p>
         </div>
 

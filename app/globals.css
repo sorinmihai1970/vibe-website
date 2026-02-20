@@ -67,6 +67,10 @@
 }
 
 /* 📝 TIPOGRAFIE MODERNĂ */
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background: linear-gradient(135deg, #FAFAFA 0%, #E0F2FE 100%);
   color: var(--foreground);

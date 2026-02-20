@@ -38,21 +38,21 @@ export default function Features() {
     {
       title: 'Cafea de Specialitate',
       description:
-        'Boabe proaspăt prăjite din plantații selectate, pentru aroma perfectă în fiecare ceașcă',
+        'Boabe prăjite săptămânal din plantații selectate. Simți diferența din prima înghițitură.',
       image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop',
       color: '#F5E6D3', // Bej cald
     },
     {
       title: 'Patiserie Artizanală',
       description:
-        'Deserturi și produse de patiserie pregătite zilnic cu ingrediente premium',
+        'Croissante, brownies și deserturi pregătite în fiecare dimineață, cu ingrediente naturale',
       image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&auto=format&fit=crop',
       color: '#FFF8E7', // Crem
     },
     {
       title: 'Ambient Relaxant',
       description:
-        'Spațiu modern și primitor, perfect pentru lucru, studiu sau întâlniri',
+        'WiFi gratuit, prize la masă și o atmosferă liniștită - ideal pentru lucru sau întâlniri',
       image: 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&auto=format&fit=crop',
       color: '#D4A574', // Maro deschis
     },
@@ -63,11 +63,11 @@ export default function Features() {
       <div className="max-w-7xl mx-auto">
         {/* 📝 TITLU SECȚIUNE */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-gray-900 mb-4">
-            De ce <span className="text-primary">Vibe Coffee</span>?
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-gray-900 mb-4">
+            De ce ne aleg <span className="text-primary">clienții</span>?
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-600 max-w-2xl mx-auto">
-            Experiență unică, ingrediente premium, atmosferă perfectă
+            Trei ingrediente simple: cafea bună, deserturi proaspete, un loc primitor
           </p>
         </div>
 

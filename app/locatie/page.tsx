@@ -64,11 +64,11 @@ export default function LocatiePage() {
         </div>
 
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.6)' }}>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-4" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.6)' }}>
             Vizitează <span className="text-secondary">Vibe Coffee</span>
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto" style={{ textShadow: '0 2px 6px rgba(0,0,0,0.6)' }}>
-            Un loc special unde cafeaua întâlnește confortul
+            Locul tău de cafea bună, lucru liniștit și conversații lungi
           </p>
 
           {/* Buton înapoi */}
@@ -157,10 +157,10 @@ export default function LocatiePage() {
           {/* GALERIE FOTO */}
           <div className="mb-16">
             <h2 className="text-4xl font-bold text-foreground text-center mb-4">
-              Galerie <span className="text-primary">Foto</span>
+              Cum arată la <span className="text-primary">noi</span>
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-              Descoperă atmosfera unică a cafenelei noastre
+              Fă-ți o idee despre spațiu înainte să vii
             </p>
 
             {/* Grid Galerie */}
@@ -197,19 +197,19 @@ export default function LocatiePage() {
           </div>
 
           {/* CTA FINAL */}
-          <div className="glass rounded-3xl p-12 text-center">
+          <div className="glass rounded-3xl p-6 sm:p-12 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Te așteptăm cu drag!
+              Hai la o cafea!
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-              Vino să descoperi cafeaua perfectă într-un ambient relaxant
+              Sună-ne sau treci direct - locul e aici
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+40721234567"
                 className="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl"
               >
-                Sună pentru rezervare
+                Sună-ne acum
               </a>
               <Link
                 href="/#menu"

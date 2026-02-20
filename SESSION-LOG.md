@@ -1,5 +1,52 @@
 # Session Log
 
+## 2026-02-20 - Lecția 6.2 + Lecția 7.1: Integrare, Deploy, Analiză 5 Stadii
+
+### Ce s-a făcut
+
+**Lecția 6.2 - Integrare și Deploy (continuare sesiune anterioară):**
+- Quick replies contextuale: butoane rapide care se schimbă în funcție de răspunsul bot-ului
+- Link-uri clickabile în chat: meniu (/#menu) și rezervări (/rezervari)
+- Render markdown în mesaje (linkuri + bold)
+- 7 reguli adăugate în system prompt (nu inventa, rămâi pe subiect, răspunde scurt, etc.)
+- Paletă de culori schimbată: teal → Warm Coffee (auriu-maro, #8B6914)
+- Fix major: scroll-ul din chat era blocat de Lenis smooth scroll (data-lenis-prevent)
+- Layout chat restructurat cu CSS Grid + h-[100dvh] pe mobil
+- Buton scroll-to-top în conversație
+- Testat complet (6 scenarii curl + verificare vizuală)
+- Fix link meniu: /meniu → /#menu (secțiune pe pagina principală)
+- Commit + push pe GitHub (branch starter)
+- Deploy pe Vercel cu ANTHROPIC_API_KEY configurat
+
+**Lecția 7.1 - Harta celor 5 Stadii:**
+- Analiză completă Vibe Caffe: 4 pagini, 12 componente, 30+ produse, dark mode, chatbot
+- Analiză completă Vibe Budget: 9 pagini dashboard, 6 tabele, 20 API endpoints, AI coach
+- Analiză Barista Bot: knowledge base, personalitate, reguli, funcționare tehnică
+- Tabel comparativ cele 5 stadii (CINE/CE/CU CE/CUM/FLUX) × 3 aplicații
+- Identificat ce au în comun (metoda, fluxul, stack-ul, iterarea)
+- Identificat ce e diferit (design vs date vs conversație)
+- Generat PORTOFOLIU.md cu cele 3 aplicații + rezumat curs
+- Copiat ghiduri 7.1, 7.2 și PORTOFOLIU.md pe Desktop/Markdown
+
+### Ce rămâne
+- [ ] Lecția 7.2: Polish rapid texte, layout, deploy pe toate 3 aplicațiile
+- [ ] Commit PORTOFOLIU.md (nesalvat în git)
+- [ ] Filmat video lead magnet Claude Code
+- [ ] Materiale Săptămâna 8 (Capstone)
+
+### Commits
+- `82cd3ad` Add Barista Bot AI chatbot with knowledge base and quick replies (pushed + deployed)
+
+### Decizii importante
+- Lenis smooth scroll blochează scroll-ul în elemente nested → fix cu `data-lenis-prevent`
+- Layout chat: CSS Grid cu `gridTemplateRows: 'auto 1fr auto'` + absolute-inside-relative pentru messages
+- Paletă chatbot: Warm Coffee (#8B6914/#6B4F10) - diferită de site (teal) pentru distincție vizuală
+- Link meniu e /#menu (secțiune pe homepage), nu /meniu (pagina nu există)
+- Vibe Budget URL: https://vibe-budget-main.vercel.app
+- Vibe Caffe URL: https://vibe-website-rho.vercel.app
+
+---
+
 ## 2026-02-19 - Lecția 6.1: Barista Bot cu Claude AI
 
 ### Ce s-a făcut

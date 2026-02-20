@@ -124,7 +124,7 @@ export default function RezervarePage() {
           </h1>
 
           <p className="text-xl text-gray-600 mb-8">
-            Vă așteptăm cu drag la Vibe Coffee
+            Ne vedem la Vibe Coffee!
           </p>
 
           <div className="backdrop-blur-sm bg-white/50 rounded-2xl p-6 mb-8 text-left">
@@ -190,13 +190,13 @@ export default function RezervarePage() {
         {/* HEADER */}
         <div className="text-center mb-12">
           <Link href="/" className="inline-block mb-6 text-primary hover:text-primary-dark transition-colors">
-            ← Înapoi
+            ← Înapoi acasă
           </Link>
-          <h1 className="text-5xl font-bold text-foreground mb-4">
+          <h1 className="text-3xl sm:text-5xl font-bold text-foreground mb-4">
             Rezervă o <span className="text-primary">masă</span>
           </h1>
           <p className="text-xl text-gray-600">
-            Alege data, ora și completează detaliile pentru rezervare
+            În 3 pași simpli îți rezervi locul
           </p>
         </div>
 

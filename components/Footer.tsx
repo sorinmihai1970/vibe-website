@@ -40,7 +40,7 @@ export default function Footer() {
                 <span className="text-secondary">Coffee</span>
               </h3>
               <p className="mb-6 leading-relaxed text-lg">
-                Locul perfect pentru cafeaua ta zilnică și momente de relaxare
+                Cafea bună, oameni faini, momente liniștite
               </p>
 
               <div className="space-y-3">
@@ -168,7 +168,7 @@ export default function Footer() {
 
               <div className="bg-white/10 p-6 rounded-2xl backdrop-blur-sm">
                 <h5 className="text-white font-bold mb-2">Newsletter</h5>
-                <p className="text-sm mb-4">Primește oferte exclusive</p>
+                <p className="text-sm mb-4">Fii primul care află de ofertele noi</p>
                 <div className="flex gap-2">
                   <input
                     type="email"
@@ -186,7 +186,7 @@ export default function Footer() {
           {/* COPYRIGHT */}
           <div className="border-t border-white/10 pt-8 text-center">
             <p className="text-sm">
-              &copy; 2024 Vibe Coffee. Toate drepturile rezervate. | Creat cu ❤️ pentru iubitorii de cafea
+              &copy; 2025 Vibe Coffee. Toate drepturile rezervate. | Creat cu ❤️ pentru iubitorii de cafea
             </p>
           </div>
         </div>

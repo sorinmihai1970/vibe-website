@@ -75,7 +75,7 @@ export default function Hero() {
       >
         {/* 📝 TITLU PRINCIPAL - Mărit la 96px (6rem) */}
         <h1
-          className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-6 leading-tight"
+          className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-6 leading-tight"
           style={{
             textShadow: '0 4px 12px rgba(0,0,0,0.8)',
             animation: isVisible ? 'fadeInUp 1s ease-out' : 'none'
@@ -95,7 +95,7 @@ export default function Hero() {
             animation: isVisible ? 'fadeInUp 1s ease-out 0.2s both' : 'none'
           }}
         >
-          Descoperă aromele autentice ale cafelei de specialitate într-un ambient modern și prietenos
+          Aromă de cafea proaspătă, deserturi calde și un ambient care te invită să rămâi
         </p>
 
         {/* 🔘 CTA BUTTONS */}
@@ -116,7 +116,7 @@ export default function Hero() {
             href="/locatie"
             className="px-10 py-5 bg-secondary hover:bg-secondary-dark text-white text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl"
           >
-            Vizitează-ne
+            Unde ne găsești
           </a>
         </div>
       </div>
