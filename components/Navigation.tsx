@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 const links = [
   { label: 'Acasă', href: '#' },
-  { label: 'Features', href: '#features' },
+  { label: 'Despre noi', href: '#features' },
   { label: 'Meniu', href: '#menu' },
   { label: 'Rezervări', href: '/rezervari' },
 ];
@@ -35,7 +35,7 @@ export default function Navigation() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 font-bold text-xl" style={{ color: '#0D9488' }}>
           <span style={{ color: '#F97316' }}>☕</span>
-          Vibe Caffè
+          Vibe Coffee
         </a>
 
         {/* Links desktop */}
