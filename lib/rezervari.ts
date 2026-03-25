@@ -31,3 +31,23 @@ export async function getRezervari() {
 
   return data;
 }
+
+export type StatusRezervare = 'în așteptare' | 'confirmat' | 'respins';
+
+export async function schimbaStatus(id: number, status: StatusRezervare) {
+  const { error } = await supabase
+    .from('rezervari')
+    .update({ status })
+    .eq('id', id);
+
+  if (error) throw error;
+}
+
+export async function stergeRezervare(id: number) {
+  const { error } = await supabase
+    .from('rezervari')
+    .delete()
+    .eq('id', id);
+
+  if (error) throw error;
+}
