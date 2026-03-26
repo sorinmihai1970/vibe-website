@@ -25,7 +25,7 @@ export default function Navigation() {
         scrollat ? 'shadow-lg' : ''
       }`}
       style={{
-        background: scrollat ? 'rgba(255,255,255,0.85)' : 'rgba(255,255,255,0.1)',
+        background: scrollat ? 'rgba(255,255,255,0.85)' : 'transparent',
         backdropFilter: 'blur(12px)',
         WebkitBackdropFilter: 'blur(12px)',
       }}
