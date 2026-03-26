@@ -15,6 +15,7 @@ export default function HeroStarter() {
         loop
         muted
         playsInline
+        poster="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&auto=format&fit=crop"
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src="/6201669-uhd_3840_2160_24fps.mp4" type="video/mp4" />
