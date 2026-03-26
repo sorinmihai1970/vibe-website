@@ -329,7 +329,11 @@ html.lenis-smooth {
   animation: fadeInUp 0.7s ease-out forwards;
 }
 
-.hero-animate-1 { animation-delay: 0.5s; }
-.hero-animate-2 { animation-delay: 0.8s; }
-.hero-animate-3 { animation-delay: 1.1s; }
-.hero-animate-4 { animation-delay: 1.5s; }
+.hero-animate-1 { animation-delay: 0.8s; }
+.hero-animate-2 { animation-delay: 1.3s; }
+.hero-animate-3 { animation-delay: 1.8s; }
+.hero-animate-4 { animation-delay: 2.4s; }
+
+.hero-bg-fade {
+  animation: fadeIn 2s ease-out forwards;
+}

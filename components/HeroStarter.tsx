@@ -15,10 +15,11 @@ export default function HeroStarter() {
         loop
         muted
         playsInline
-        poster="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&auto=format&fit=crop&crop=top"
-        className="absolute inset-0 w-full h-full object-cover object-top"
+        poster="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&auto=format&fit=crop&crop=center"
+        className="absolute inset-0 w-full h-full object-cover hero-bg-fade"
+        style={{ objectPosition: '50% 30%' }}
       >
-        <source src="/6201669-uhd_3840_2160_24fps.mp4" type="video/mp4" />
+        <source src="/6201669-hd_1920_1080_24fps.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay semi-transparent */}
@@ -38,7 +39,7 @@ export default function HeroStarter() {
         </h1>
 
         <p
-          className="text-xl md:text-2xl mb-0 text-white/90 font-semibold hero-animate hero-animate-2"
+          className="text-xl md:text-2xl mb-0 text-white/90 font-bold tracking-wide hero-animate hero-animate-2"
           style={{ textShadow: '0 2px 12px rgba(0,0,0,0.5)' }}
         >
           Mai mult decât o băutură — un ritual zilnic
