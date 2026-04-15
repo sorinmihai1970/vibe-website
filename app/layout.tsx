@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ChatWidget from "@/components/ChatWidget";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -64,6 +65,7 @@ export default function RootLayout({
         className={`${plusJakarta.variable} ${inter.variable} antialiased`}
       >
         {children}
+        <ChatWidget />
       </body>
     </html>
   );
