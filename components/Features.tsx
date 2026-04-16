@@ -58,7 +58,7 @@ function FeatureCard({
   return (
     <div
       ref={ref}
-      className="group bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col transition-shadow duration-300 hover:shadow-xl"
+      className="group bg-white rounded-3xl overflow-hidden shadow-sm border border-amber-100 flex flex-col transition-shadow duration-300 hover:shadow-xl hover:border-amber-200"
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0)' : 'translateY(32px)',
@@ -80,7 +80,7 @@ function FeatureCard({
 
       {/* Text - 60% înălțime */}
       <div className={`flex flex-col justify-center flex-1 ${large ? 'p-10' : 'p-8'}`}>
-        <h3 className={`font-bold text-gray-900 mb-3 ${large ? 'text-3xl' : 'text-2xl'}`}>
+        <h3 className={`font-bold text-[#1C1008] mb-3 ${large ? 'text-3xl' : 'text-2xl'}`}>
           {card.title}
         </h3>
         <p className={`text-gray-600 leading-relaxed ${large ? 'text-lg' : ''}`}>
@@ -93,15 +93,15 @@ function FeatureCard({
 
 export default function Features() {
   return (
-    <section id="features" className="py-20 px-6 bg-gray-50" style={{ scrollMarginTop: '80px' }}>
+    <section id="features" className="py-20 px-6 bg-amber-50" style={{ scrollMarginTop: '80px' }}>
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className="text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-5xl font-bold text-[#1C1008] mb-4">
             De ce Vibe Coffee?
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-amber-800">
             Experiență unică, ingrediente premium, atmosferă perfectă
           </p>
         </div>

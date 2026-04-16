@@ -33,8 +33,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 font-bold text-xl" style={{ color: '#0D9488' }}>
-          <span style={{ color: '#F97316' }}>☕</span>
+        <a href="#" className="flex items-center gap-2 font-bold text-xl" style={{ color: '#B45309' }}>
+          <span style={{ color: '#D97706' }}>☕</span>
           Vibe Coffee
         </a>
 
@@ -57,7 +57,7 @@ export default function Navigation() {
           <a
             href="/rezervari"
             className="px-6 py-2.5 rounded-full font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
-            style={{ background: '#F97316' }}
+            style={{ background: '#D97706' }}
           >
             Rezervă
           </a>
@@ -108,7 +108,7 @@ export default function Navigation() {
               key={l.href}
               href={l.href}
               onClick={() => setMenuDeschis(false)}
-              className="font-medium text-gray-800 hover:text-teal-600 transition-colors"
+              className="font-medium text-gray-800 hover:text-amber-700 transition-colors"
             >
               {l.label}
             </a>
@@ -117,7 +117,7 @@ export default function Navigation() {
             href="/rezervari"
             onClick={() => setMenuDeschis(false)}
             className="px-6 py-3 rounded-full font-semibold text-white text-center transition-all"
-            style={{ background: '#F97316' }}
+            style={{ background: '#D97706' }}
           >
             Rezervă acum
           </a>

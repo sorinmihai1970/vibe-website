@@ -13,8 +13,8 @@ export async function POST(request: NextRequest) {
     const trimmedMessages = messages.slice(-6);
 
     const stream = client.messages.stream({
-      model: 'claude-sonnet-4-5-20250929',
-      max_tokens: 200,
+      model: 'claude-sonnet-4-6',
+      max_tokens: 400,
       system,
       messages: trimmedMessages,
     });

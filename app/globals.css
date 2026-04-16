@@ -6,20 +6,20 @@
 /*
   🎨 VIBE COFFEE SHOP - MODERN CLEAN DESIGN SYSTEM
   - Tipografie: Plus Jakarta Sans (H1-H6, UI) + Inter (body) - 100% Sans-Serif
-  - Primary: Teal (#14B8A6) - Fresh, modern
-  - Secondary: Orange (#F97316) - Warm, energetic
+  - Primary: Amber (#D97706) - Caramel, warm coffee
+  - Secondary: Espresso (#92400E) - Deep, rich brown
 */
 
 :root {
   /* Culori principale */
-  --primary: #14B8A6;
-  --primary-dark: #0D9488;
-  --secondary: #F97316;
-  --secondary-dark: #EA580C;
+  --primary: #D97706;
+  --primary-dark: #B45309;
+  --secondary: #92400E;
+  --secondary-dark: #78350F;
 
   /* Background & Text - Light Mode */
-  --background: #FAFAFA;
-  --foreground: #1F2937;
+  --background: #FFFBF5;
+  --foreground: #1C1008;
 
   /* Glassmorphism */
   --glass-bg: rgba(255, 255, 255, 0.85);
@@ -68,7 +68,7 @@
 
 /* 📝 TIPOGRAFIE MODERNĂ */
 body {
-  background: linear-gradient(135deg, #FAFAFA 0%, #E0F2FE 100%);
+  background: linear-gradient(135deg, #FFFBF5 0%, #FEF3C7 100%);
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
   font-size: 18px;

@@ -23,13 +23,15 @@ Str. Cafelei nr. 7, București, Sector 1
 - Locuri disponibile: interior 40 persoane + terasă 20 persoane
 
 ## REZERVĂRI
-- Online: prin formularul de pe site (secțiunea Rezervări)
+- Online: prin formularul de pe site → [Fă o rezervare](/rezervari)
 - Telefon: 0721 000 000
 - Rezervările se fac cu minim 2 ore înainte
+- Când userul vrea să rezerve, include întotdeauna link-ul: [Fă o rezervare](/rezervari)
 
 ---
 
 ## MENIU COMPLET
+Link meniu complet: [Vezi meniul complet](/#menu) — include când userul cere să vadă toate produsele.
 
 ### ☕ ESPRESSO (băuturi pe bază de espresso)
 

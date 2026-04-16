@@ -89,17 +89,17 @@ export default function AdminPage() {
   const numarPeStatus = (s: StatusRezervare) => rezervari.filter((r) => r.status === s).length;
 
   return (
-    <main className="min-h-screen py-10 px-6" style={{ background: 'linear-gradient(135deg, #0D9488 0%, #0f766e 100%)' }}>
+    <main className="min-h-screen py-10 px-6" style={{ background: 'linear-gradient(135deg, #92400E 0%, #78350F 100%)' }}>
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <div>
             <h1 className="text-3xl font-bold text-white">Admin — Rezervări</h1>
-            <p className="text-teal-100 mt-1">{rezervari.length} rezervări în total</p>
+            <p className="text-amber-100 mt-1">{rezervari.length} rezervări în total</p>
           </div>
           <button onClick={incarca}
-            className="px-4 py-2 rounded-xl text-sm font-semibold text-teal-900 transition-all"
+            className="px-4 py-2 rounded-xl text-sm font-semibold text-amber-900 transition-all"
             style={{ background: 'rgba(255,255,255,0.85)', backdropFilter: 'blur(8px)' }}>
             ↺ Reîncarcă
           </button>
@@ -117,7 +117,7 @@ export default function AdminPage() {
               className="px-4 py-2 rounded-xl text-sm font-semibold transition-all"
               style={{
                 background: filtruStatus === val ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.2)',
-                color: filtruStatus === val ? '#0D9488' : 'white',
+                color: filtruStatus === val ? '#D97706' : 'white',
                 backdropFilter: 'blur(8px)',
               }}>
               {label}
@@ -127,21 +127,21 @@ export default function AdminPage() {
 
         {/* Căutare */}
         <div className="mb-6 relative">
-          <span className="absolute left-4 top-1/2 -translate-y-1/2 text-teal-300">🔍</span>
+          <span className="absolute left-4 top-1/2 -translate-y-1/2 text-amber-300">🔍</span>
           <input
             type="text"
             placeholder="Caută după nume..."
             value={cautare}
             onChange={(e) => setCautare(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 rounded-xl text-white placeholder-teal-300 focus:outline-none focus:ring-2 focus:ring-white/40 transition-all"
+            className="w-full pl-10 pr-4 py-3 rounded-xl text-white placeholder-amber-300 focus:outline-none focus:ring-2 focus:ring-white/40 transition-all"
             style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(8px)', border: '1px solid rgba(255,255,255,0.2)' }}
           />
         </div>
 
-        {loading && <div className="text-center py-20 text-teal-100">Se încarcă...</div>}
+        {loading && <div className="text-center py-20 text-amber-100">Se încarcă...</div>}
 
         {!loading && filtrate.length === 0 && (
-          <div className="text-center py-20 text-teal-100">Nicio rezervare găsită.</div>
+          <div className="text-center py-20 text-amber-100">Nicio rezervare găsită.</div>
         )}
 
         {!loading && filtrate.length > 0 && (
@@ -154,14 +154,14 @@ export default function AdminPage() {
                   <div className="flex items-start justify-between mb-3">
                     <div>
                       <p className="font-bold text-white text-lg">{r.nume}</p>
-                      <p className="text-teal-100 text-sm">{r.email}</p>
-                      <p className="text-teal-200 text-sm">{r.telefon}</p>
+                      <p className="text-amber-100 text-sm">{r.email}</p>
+                      <p className="text-amber-200 text-sm">{r.telefon}</p>
                     </div>
                     <span className={`px-3 py-1 rounded-full text-xs font-semibold ${STATUS_CONFIG[r.status]?.culoare ?? 'bg-gray-100 text-gray-600'}`}>
                       {STATUS_CONFIG[r.status]?.label ?? r.status}
                     </span>
                   </div>
-                  <div className="flex gap-4 text-teal-100 text-sm mb-4">
+                  <div className="flex gap-4 text-amber-100 text-sm mb-4">
                     <span>📅 {r.data}</span>
                     <span>🕐 {r.ora}</span>
                     <span>👥 {r.numar_persoane}</span>
@@ -178,7 +178,7 @@ export default function AdminPage() {
                 <thead style={{ background: 'rgba(255,255,255,0.1)' }}>
                   <tr>
                     {['Nume', 'Contact', 'Data & Ora', 'Persoane', 'Status', 'Acțiuni'].map((h) => (
-                      <th key={h} className="text-left px-6 py-4 font-semibold text-teal-100">{h}</th>
+                      <th key={h} className="text-left px-6 py-4 font-semibold text-amber-100">{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -189,15 +189,15 @@ export default function AdminPage() {
                       onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.08)')}
                       onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}>
                       <td className="px-6 py-4 font-semibold text-white">{r.nume}</td>
-                      <td className="px-6 py-4 text-teal-100">
+                      <td className="px-6 py-4 text-amber-100">
                         <div>{r.email}</div>
-                        <div className="text-teal-200 text-xs">{r.telefon}</div>
+                        <div className="text-amber-200 text-xs">{r.telefon}</div>
                       </td>
-                      <td className="px-6 py-4 text-teal-100">
+                      <td className="px-6 py-4 text-amber-100">
                         <div className="font-medium">{r.data}</div>
-                        <div className="text-teal-200 text-xs">{r.ora}</div>
+                        <div className="text-amber-200 text-xs">{r.ora}</div>
                       </td>
-                      <td className="px-6 py-4 text-teal-100">{r.numar_persoane}</td>
+                      <td className="px-6 py-4 text-amber-100">{r.numar_persoane}</td>
                       <td className="px-6 py-4">
                         <span className={`px-3 py-1 rounded-full text-xs font-semibold ${STATUS_CONFIG[r.status]?.culoare ?? 'bg-gray-100 text-gray-600'}`}>
                           {STATUS_CONFIG[r.status]?.label ?? r.status}

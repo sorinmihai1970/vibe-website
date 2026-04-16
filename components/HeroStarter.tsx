@@ -30,8 +30,7 @@ export default function HeroStarter() {
         <h1
           className="font-bold mb-4 leading-tight hero-animate hero-animate-1"
           style={{
-            fontSize: 'clamp(1.5rem, 4.5vw, 5rem)',
-            whiteSpace: 'nowrap',
+            fontSize: 'clamp(1.8rem, 5vw, 5rem)',
             textShadow: '0 4px 24px rgba(0,0,0,0.6)',
           }}
         >
@@ -56,7 +55,7 @@ export default function HeroStarter() {
         </a>
         <a
           href="#shop"
-          className="inline-block px-8 py-4 bg-teal-500 hover:bg-teal-600 text-white font-semibold rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center"
+          className="inline-block px-8 py-4 bg-amber-800 hover:bg-amber-900 text-white font-semibold rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center"
         >
           Descoperă Magazinul
         </a>
