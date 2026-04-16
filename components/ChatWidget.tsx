@@ -15,7 +15,7 @@ const STORAGE_DATE_KEY = 'vibe-coffee-chat-date';
 
 const INITIAL_MESSAGE: Message = {
   role: 'assistant',
-  content: 'Bine ați venit la Vibe Coffee. Sunt somelierul dumneavoastră de cafea — cu ce vă pot îmbogăți seara astăzi?',
+  content: 'Bine ați venit la Vibe Coffee. Sunt somelierul dumneavoastră de cafea — cu ce vă pot ajuta astăzi?',
 };
 
 const INITIAL_QUICK_REPLIES = [
