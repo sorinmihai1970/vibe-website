@@ -211,7 +211,7 @@ export default function RezervariPage() {
           ))}
         </div>
 
-        <div className="bg-white rounded-3xl shadow-xl p-8">
+        <div className="bg-white rounded-3xl shadow-xl p-5 md:p-8">
 
           {/* PAS 1 — Alege data */}
           {pas === 1 && (

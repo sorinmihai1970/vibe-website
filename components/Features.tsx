@@ -6,7 +6,7 @@ const cards = [
   {
     title: 'Cafea de Specialitate',
     description:
-      'Folosim exclusiv boabe single-origin, prăjite artizanal în România. Fiecare ceașcă este preparată cu precizie de baristele noastre certificate, pentru un gust consistent și memorabil.',
+      'Boabe single-origin prăjite artizanal, extrase cu precizie de bariste certificate. Un gust consistent, de fiecare dată.',
     image:
       'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop',
     imageAlt: 'Cafea preparată artistic',
@@ -20,9 +20,9 @@ const cards = [
     imageAlt: 'Deserturi și patiserie artizanală',
   },
   {
-    title: 'Ambient Relaxant',
+    title: 'Atmosferă de Poveste',
     description:
-      'Un spațiu gândit pentru confort și inspirație — lumină caldă, muzică selectată cu grijă și colțuri perfecte pentru lucru sau relaxare.',
+      'Lumină caldă, muzică atent aleasă, colțuri perfecte pentru lucru sau relaxare.',
     image:
       'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&auto=format&fit=crop',
     imageAlt: 'Interior cafenea modern',
@@ -79,8 +79,8 @@ function FeatureCard({
       </div>
 
       {/* Text - 60% înălțime */}
-      <div className={`flex flex-col justify-center flex-1 ${large ? 'p-10' : 'p-8'}`}>
-        <h3 className={`font-bold text-[#1C1008] mb-3 ${large ? 'text-3xl' : 'text-2xl'}`}>
+      <div className={`flex flex-col justify-center flex-1 ${large ? 'p-6 md:p-10' : 'p-6 md:p-8'}`}>
+        <h3 className={`font-bold text-[#1C1008] mb-3 ${large ? 'text-2xl md:text-3xl' : 'text-xl md:text-2xl'}`}>
           {card.title}
         </h3>
         <p className={`text-gray-600 leading-relaxed ${large ? 'text-lg' : ''}`}>
@@ -93,16 +93,16 @@ function FeatureCard({
 
 export default function Features() {
   return (
-    <section id="features" className="py-20 px-6 bg-amber-50" style={{ scrollMarginTop: '80px' }}>
+    <section id="features" className="py-12 md:py-20 px-6 bg-amber-50" style={{ scrollMarginTop: '80px' }}>
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-14">
-          <h2 className="text-5xl font-bold text-[#1C1008] mb-4">
-            De ce Vibe Coffee?
+        <div className="text-center mb-10 md:mb-14">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#1C1008] mb-4">
+            Ce ne face speciali
           </h2>
-          <p className="text-xl text-amber-800">
-            Experiență unică, ingrediente premium, atmosferă perfectă
+          <p className="text-lg md:text-xl text-amber-800">
+            Trei motive să revii mereu
           </p>
         </div>
 

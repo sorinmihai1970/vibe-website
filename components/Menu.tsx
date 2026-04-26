@@ -11,7 +11,7 @@ const menuData = {
     { name: 'Latte', price: 17, description: 'Espresso cu lapte abundent', image: 'https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600&auto=format&fit=crop' },
     { name: 'Cortado', price: 15, description: 'Espresso echilibrat cu lapte cald', image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&auto=format&fit=crop' },
   ],
-  Specialty: [
+  'Cafele Speciale': [
     { name: 'Pour Over', price: 22, description: 'Cafea filtrată manual, aromă delicată', image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&auto=format&fit=crop' },
     { name: 'AeroPress', price: 20, description: 'Extracție sub presiune, corp plin', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format&fit=crop' },
     { name: 'Cold Drip', price: 24, description: 'Picurare la rece, 8 ore de preparare', image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&auto=format&fit=crop' },
@@ -19,7 +19,7 @@ const menuData = {
     { name: 'Turmeric Latte', price: 20, description: 'Golden milk cu condimente aromate', image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&auto=format&fit=crop' },
     { name: 'Chemex', price: 23, description: 'Filtrare lentă pentru claritate maximă', image: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&auto=format&fit=crop' },
   ],
-  'Cold Brew': [
+  'Băuturi Reci': [
     { name: 'Cold Brew Classic', price: 18, description: 'Infuzat 24h la rece, fin și răcoritor', image: 'https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&auto=format&fit=crop' },
     { name: 'Cold Brew Tonic', price: 22, description: 'Cold brew cu apă tonică și lime', image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&auto=format&fit=crop' },
     { name: 'Nitro Cold Brew', price: 24, description: 'Cremă naturală de azot, fără lapte', image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format&fit=crop' },
@@ -55,21 +55,21 @@ export default function Menu() {
   };
 
   return (
-    <section id="menu" className="py-20 px-6 bg-white" style={{ scrollMarginTop: '80px' }}>
+    <section id="menu" className="py-12 md:py-20 px-6 bg-white" style={{ scrollMarginTop: '80px' }}>
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold text-gray-900 mb-4">
-            Meniul Nostru
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+            Alege ce îți place
           </h2>
-          <p className="text-xl text-gray-600">
-            Ingrediente premium, preparate cu pasiune
+          <p className="text-lg md:text-xl text-gray-600">
+            Fiecare produs, pregătit cu grijă pentru tine
           </p>
         </div>
 
         {/* Tab-uri categorii */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 mb-8 md:mb-12">
           {categories.map((cat) => (
             <button
               key={cat}

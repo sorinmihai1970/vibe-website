@@ -54,13 +54,13 @@ export default function HeroStarter() {
           Vezi Meniul
         </a>
         <a
-          href="#shop"
+          href="#features"
           className="inline-block px-8 py-4 bg-amber-800 hover:bg-amber-900 text-white font-semibold rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center"
         >
-          Descoperă Magazinul
+          Despre noi
         </a>
         <a
-          href="#locatie"
+          href="/locatie"
           className="inline-block px-8 py-4 bg-white/15 border-2 border-white text-white font-semibold rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-white/30 text-center"
         >
           Vizitează-ne
