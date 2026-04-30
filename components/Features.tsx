@@ -6,7 +6,7 @@ const cards = [
   {
     title: 'Cafea de Specialitate',
     description:
-      'Boabe single-origin prăjite artizanal, extrase cu precizie de bariste certificate. Un gust consistent, de fiecare dată.',
+      'Boabe single-origin prăjite artizanal, extrase cu precizie de maeștri în arta cafelei. Un gust consistent, de fiecare dată.',
     image:
       'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&auto=format&fit=crop',
     imageAlt: 'Cafea preparată artistic',

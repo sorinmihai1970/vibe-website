@@ -35,66 +35,66 @@ Link meniu complet: [Vezi meniul complet](/#menu) — include când userul cere 
 
 ### ☕ ESPRESSO (băuturi pe bază de espresso)
 
-**Espresso** — 12 RON
+**Espresso** — 12 Lei
 Descriere: Shot dublu de espresso intens
 Ingrediente: 18g cafea specialty, 36ml extract
 Vegan: DA
 
-**Americano** — 14 RON
+**Americano** — 14 Lei
 Descriere: Espresso diluat cu apă caldă
 Ingrediente: Espresso dublu, apă fierbinte 150ml
 Vegan: DA
 
-**Cappuccino** — 16 RON
+**Cappuccino** — 16 Lei
 Descriere: Espresso cu lapte spumat
 Ingrediente: Espresso dublu, lapte integral spumat 120ml
-Vegan: NU (conține lapte — disponibil cu lapte de ovăz +2 RON)
+Vegan: NU (conține lapte — disponibil cu lapte de ovăz +2 Lei)
 
-**Flat White** — 17 RON
+**Flat White** — 17 Lei
 Descriere: Microfoam mătăsos peste espresso
 Ingrediente: Espresso dublu ristretto, lapte integral microfoam 100ml
-Vegan: NU (conține lapte — disponibil cu lapte de ovăz +2 RON)
+Vegan: NU (conține lapte — disponibil cu lapte de ovăz +2 Lei)
 
-**Latte** — 17 RON
+**Latte** — 17 Lei
 Descriere: Espresso cu lapte abundent
 Ingrediente: Espresso dublu, lapte integral 200ml, microfoam
-Vegan: NU (conține lapte — disponibil cu lapte de ovăz +2 RON)
+Vegan: NU (conține lapte — disponibil cu lapte de ovăz +2 Lei)
 
-**Cortado** — 15 RON
+**Cortado** — 15 Lei
 Descriere: Espresso echilibrat cu lapte cald
 Ingrediente: Espresso dublu, lapte cald 60ml (raport 1:1)
-Vegan: NU (conține lapte — disponibil cu lapte de ovăz +2 RON)
+Vegan: NU (conține lapte — disponibil cu lapte de ovăz +2 Lei)
 
 ---
 
 ### ⭐ SPECIALTY (metode alternative de preparare)
 
-**Pour Over** — 22 RON
+**Pour Over** — 22 Lei
 Descriere: Cafea filtrată manual, aromă delicată
 Ingrediente: 15g cafea single-origin, 250ml apă filtrată la 93°C
 Vegan: DA
 
-**AeroPress** — 20 RON
+**AeroPress** — 20 Lei
 Descriere: Extracție sub presiune, corp plin
 Ingrediente: 17g cafea specialty, 200ml apă filtrată
 Vegan: DA
 
-**Cold Drip** — 24 RON
+**Cold Drip** — 24 Lei
 Descriere: Picurare la rece, 8 ore de preparare
 Ingrediente: 60g cafea măcinată fin, 500ml apă rece filtrată (preparat 8h)
 Vegan: DA
 
-**Matcha Latte** — 22 RON
+**Matcha Latte** — 22 Lei
 Descriere: Matcha ceremonial cu lapte de ovăz
 Ingrediente: 3g matcha ceremonial japonez, lapte de ovăz 200ml, sirop de agave
 Vegan: DA (conține lapte de ovăz)
 
-**Turmeric Latte** — 20 RON
+**Turmeric Latte** — 20 Lei
 Descriere: Golden milk cu condimente aromate
 Ingrediente: Turmeric, ghimbir, scorțișoară, piper negru, lapte de ovăz 200ml, miere
 Vegan: DA (conține lapte de ovăz; fără miere la cerere)
 
-**Chemex** — 23 RON
+**Chemex** — 23 Lei
 Descriere: Filtrare lentă pentru claritate maximă
 Ingrediente: 30g cafea grosier măcinată, 500ml apă la 94°C, filtru Chemex
 Vegan: DA
@@ -103,32 +103,32 @@ Vegan: DA
 
 ### 🧊 COLD BREW (băuturi reci)
 
-**Cold Brew Classic** — 18 RON
+**Cold Brew Classic** — 18 Lei
 Descriere: Infuzat 24h la rece, fin și răcoritor
 Ingrediente: Cafea cold brew infuzată 24h, gheață, apă filtrată
 Vegan: DA
 
-**Cold Brew Tonic** — 22 RON
+**Cold Brew Tonic** — 22 Lei
 Descriere: Cold brew cu apă tonică și lime
 Ingrediente: Cold brew 80ml, apă tonică premium 150ml, lime proaspăt, gheață
 Vegan: DA
 
-**Nitro Cold Brew** — 24 RON
+**Nitro Cold Brew** — 24 Lei
 Descriere: Cremă naturală de azot, fără lapte
 Ingrediente: Cold brew infuzat cu azot (N2), servit la robinet
 Vegan: DA
 
-**Iced Latte** — 19 RON
+**Iced Latte** — 19 Lei
 Descriere: Espresso cu lapte rece și gheață
 Ingrediente: Espresso dublu, lapte integral rece 150ml, gheață
-Vegan: NU (conține lapte — disponibil cu lapte de ovăz/cocos +2 RON)
+Vegan: NU (conține lapte — disponibil cu lapte de ovăz/cocos +2 Lei)
 
-**Iced Matcha** — 21 RON
+**Iced Matcha** — 21 Lei
 Descriere: Matcha shake cu lapte de cocos
 Ingrediente: 4g matcha ceremonial, lapte de cocos 200ml, gheață, sirop de agave
 Vegan: DA (conține lapte de cocos)
 
-**Frappé Caramel** — 23 RON
+**Frappé Caramel** — 23 Lei
 Descriere: Blended cu caramel și frișcă
 Ingrediente: Espresso dublu, lapte, gheață blended, sos caramel, frișcă
 Vegan: NU (conține lapte și frișcă)
@@ -137,32 +137,32 @@ Vegan: NU (conține lapte și frișcă)
 
 ### 🥐 PATISERIE (produse de brutărie)
 
-**Croissant cu Unt** — 12 RON
+**Croissant cu Unt** — 12 Lei
 Descriere: Foietaj franțuzesc, crocant și fraged
 Ingrediente: Făină, unt 82% grăsime, ouă, drojdie, sare, lapte
 Vegan: NU (conține gluten, ouă, lactate)
 
-**Croissant Migdale** — 15 RON
+**Croissant Migdale** — 15 Lei
 Descriere: Umplut cu cremă de migdale
 Ingrediente: Foietaj, cremă frangipane (migdale, unt, ouă, zahăr), fulgi migdale
 Vegan: NU (conține gluten, ouă, lactate, nuci)
 
-**Cinnamon Roll** — 16 RON
+**Cinnamon Roll** — 16 Lei
 Descriere: Rulou cu scorțișoară și glazură
 Ingrediente: Aluat cu lapte și unt, scorțișoară, zahăr brun, glazură cream cheese
 Vegan: NU (conține gluten, ouă, lactate)
 
-**Brownie** — 14 RON
+**Brownie** — 14 Lei
 Descriere: Ciocolată neagră 70%, umed și intens
 Ingrediente: Ciocolată 70% cacao, unt, ouă, zahăr, făină, sare de mare
 Vegan: NU (conține gluten, ouă, lactate)
 
-**Cheesecake Fistic** — 18 RON
+**Cheesecake Fistic** — 18 Lei
 Descriere: Cremă de fistic pe blat digestiv
 Ingrediente: Biscuiți digestivi, unt, cream cheese, frișcă, pastă fistic, zahăr
 Vegan: NU (conține gluten, lactate)
 
-**Banana Bread** — 13 RON
+**Banana Bread** — 13 Lei
 Descriere: Pâine cu banane, nuci și scorțișoară
 Ingrediente: Banane coapte, făină integrală, ulei de cocos, zahăr de cocos, nuci, scorțișoară
 Vegan: DA (fără ouă, fără lactate)
@@ -171,15 +171,15 @@ Vegan: DA (fără ouă, fără lactate)
 
 ## RECOMANDĂRI
 
-**Cel mai popular:** Cappuccino (16 RON) — clasicul preferat al clienților noștri
+**Cel mai popular:** Cappuccino (16 Lei) — clasicul preferat al clienților noștri
 
 **Cel mai ieftin:**
-- Espresso (12 RON)
-- Croissant cu Unt (12 RON)
+- Espresso (12 Lei)
+- Croissant cu Unt (12 Lei)
 
 **Cel mai scump:**
-- Cold Drip (24 RON) — preparat 8 ore
-- Nitro Cold Brew (24 RON) — tehnologie unică
+- Cold Drip (24 Lei) — preparat 8 ore
+- Nitro Cold Brew (24 Lei) — tehnologie unică
 
 **Opțiuni 100% vegane:**
 Espresso, Americano, Pour Over, AeroPress, Cold Drip, Matcha Latte, Turmeric Latte, Chemex,
@@ -187,7 +187,7 @@ Cold Brew Classic, Cold Brew Tonic, Nitro Cold Brew, Iced Matcha, Banana Bread
 
 **Opțiuni fără gluten:** Întreabă barista — unele băuturi sunt disponibile fără gluten
 
-**Lapte alternativ disponibil:** ovăz, cocos, migdale (+2 RON)
+**Lapte alternativ disponibil:** ovăz, cocos, migdale (+2 Lei)
 
 ---
 

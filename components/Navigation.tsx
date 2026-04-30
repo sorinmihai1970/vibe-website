@@ -6,6 +6,7 @@ const links = [
   { label: 'Acasă', href: '#' },
   { label: 'Despre noi', href: '#features' },
   { label: 'Meniu', href: '#menu' },
+  { label: 'Vizitează-ne', href: '/locatie' },
   { label: 'Rezervări', href: '/rezervari' },
 ];
 
@@ -30,17 +31,17 @@ export default function Navigation() {
         WebkitBackdropFilter: 'blur(12px)',
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-center gap-8">
 
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 font-bold text-xl" style={{ color: '#B45309' }}>
+        <a href="#" className="flex items-center gap-2 font-bold text-xl shrink-0" style={{ color: '#B45309' }}>
           <span style={{ color: '#D97706' }}>☕</span>
           Vibe Coffee
         </a>
 
         {/* Links desktop */}
         <div className="hidden md:flex items-center gap-8">
-          {links.slice(0, 3).map((l) => (
+          {links.slice(0, 5).map((l) => (
             <a
               key={l.href}
               href={l.href}
@@ -50,17 +51,6 @@ export default function Navigation() {
               {l.label}
             </a>
           ))}
-        </div>
-
-        {/* Buton CTA desktop */}
-        <div className="hidden md:block">
-          <a
-            href="/rezervari"
-            className="px-6 py-2.5 rounded-full font-semibold text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
-            style={{ background: '#D97706' }}
-          >
-            Rezervă
-          </a>
         </div>
 
         {/* Hamburger mobile */}

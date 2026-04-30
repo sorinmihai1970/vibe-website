@@ -122,7 +122,7 @@ export default function Menu() {
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-lg font-bold text-gray-900">{item.name}</h3>
                   <span className="text-amber-600 font-bold text-lg whitespace-nowrap ml-4">
-                    {item.price} RON
+                    {item.price} Lei
                   </span>
                 </div>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>

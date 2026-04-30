@@ -56,7 +56,7 @@ export default function LocatiePage() {
                   <div>
                     <p className="font-semibold text-gray-800">Vibe Coffee</p>
                     <p>Strada Ciobanești nr. 34</p>
-                    <p>Sat Rău Alb de Jos, Comuna Rău Alb</p>
+                    <p>Sat Râu Alb de Jos, Comuna Râu Alb</p>
                     <p>Județul Dâmbovița</p>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export default function LocatiePage() {
                 <div className="space-y-3 text-gray-600">
                   <div className="flex items-center gap-3">
                     <span className="text-xl">🚗</span>
-                    <span>Cu mașina — urmărește indicatoarele spre Comuna Rău Alb</span>
+                    <span>Cu mașina — urmărește indicatoarele spre Comuna Râu Alb</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="text-xl">🗺️</span>

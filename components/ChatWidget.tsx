@@ -15,7 +15,7 @@ const STORAGE_DATE_KEY = 'vibe-coffee-chat-date';
 
 const INITIAL_MESSAGE: Message = {
   role: 'assistant',
-  content: 'Bine ați venit la Vibe Coffee. Sunt somelierul dumneavoastră de cafea — cu ce vă pot ajuta astăzi?',
+  content: 'Bine ați venit la Vibe Coffee. Sunt expertul dumneavoastră în cafea — cu ce vă pot ajuta astăzi?',
 };
 
 const INITIAL_QUICK_REPLIES = [
@@ -306,7 +306,7 @@ export default function ChatWidget() {
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-white font-bold text-sm leading-tight truncate" style={{ fontFamily: 'var(--font-heading)' }}>Barista Bot</p>
-            <p className="text-white/80 text-xs truncate">Somelierul tău de cafea</p>
+            <p className="text-white/80 text-xs">Expert în cafea</p>
           </div>
           <div className="flex items-center gap-1">
             {/* Mute toggle */}
