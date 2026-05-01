@@ -164,9 +164,22 @@ export default function RezervariPage() {
           <h2 className="text-3xl font-bold text-amber-900 mb-4">Rezervare confirmată!</h2>
           <p className="text-gray-600 mb-2">Te așteptăm pe <strong>{data}</strong> la <strong>{ora}</strong></p>
           <p className="text-gray-600 mb-8">Vei primi o confirmare pe <strong>{form.email}</strong></p>
-          <button onClick={reset} className="px-8 py-3 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-2xl transition-all">
-            Fă o altă rezervare
-          </button>
+          <div className="flex flex-col items-center gap-6">
+            <button onClick={reset} className="px-8 py-3 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-2xl transition-all">
+              Fă o altă rezervare
+            </button>
+            <a href="/" aria-label="Înapoi la pagina principală" className="inline-flex flex-col items-center gap-1 animate-bounce"
+              style={{ color: 'rgba(13,148,136,0.5)' }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = 'rgba(13,148,136,1)')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(13,148,136,0.5)')}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+              <span className="text-xs font-medium">Acasă</span>
+            </a>
+          </div>
         </div>
       </main>
     );

@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-const FROM = process.env.GMAIL_FROM ?? 'Vibe Caffè <sorinmihai1970@gmail.com>';
+const FROM = process.env.GMAIL_FROM ?? 'Vibe Coffee <sorinmihai1970@gmail.com>';
 const ADMIN = process.env.GMAIL_ADMIN ?? 'sorinmihai1970@gmail.com';
 
 function getTransport() {
@@ -34,13 +34,13 @@ function emailLayout(content: string) {
 <body style="margin:0;padding:24px;background:#f5f5f0;font-family:sans-serif">
   <div style="max-width:600px;margin:0 auto;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08)">
     <div style="background:#2C1810;padding:24px 28px 20px">
-      <p style="margin:0;font-family:'DM Serif Display',Georgia,serif;color:#F5E6C8;font-size:24px;font-weight:400">Vibe Caffè</p>
+      <p style="margin:0;font-family:'DM Serif Display',Georgia,serif;color:#F5E6C8;font-size:24px;font-weight:400">Vibe Coffee</p>
       <p style="margin:4px 0 0;color:#F5E6C8;opacity:0.5;font-size:13px">București</p>
     </div>
     <div style="background:#F5E6C8;padding:32px 28px">
       ${content}
       <div style="border-top:1px solid rgba(59,37,7,0.2);margin-top:32px;padding-top:20px">
-        <p style="margin:0;color:#3B2507;opacity:0.45;font-size:12px">Vibe Caffè · București · str. Cafelei nr. 12</p>
+        <p style="margin:0;color:#3B2507;opacity:0.45;font-size:12px">Vibe Coffee · București · str. Cafelei nr. 12</p>
       </div>
     </div>
   </div>
@@ -61,7 +61,7 @@ export async function trimiteEmailRezervare({
       ${zi} · ${dataFmt} · ${ora}
     </h2>
     <p style="margin:0 0 12px;color:#3B2507;font-size:16px;line-height:1.6">
-      <strong>${nume}</strong>, ai solicitat o rezervare la Vibe Caffè pentru
+      <strong>${nume}</strong>, ai solicitat o rezervare la Vibe Coffee pentru
       <strong>${zi}, ${dataFmt}</strong> la ora <strong>${ora}</strong>, pentru <strong>${persoane}</strong>.
     </p>
     <p style="margin:0 0 24px;color:#3B2507;opacity:0.7;font-size:15px;line-height:1.6">
@@ -76,7 +76,7 @@ export async function trimiteEmailRezervare({
   await getTransport().sendMail({
     from: FROM,
     to: email,
-    subject: `Rezervare Vibe Caffè — ${zi}, ${dataFmt} la ${ora}`,
+    subject: `Rezervare Vibe Coffee — ${zi}, ${dataFmt} la ${ora}`,
     html: emailLayout(content),
   });
 }
@@ -128,7 +128,7 @@ export async function trimiteEmailStatus({
       Rezervare confirmată ✓
     </h2>
     <p style="margin:0 0 12px;color:#3B2507;font-size:16px;line-height:1.6">
-      <strong>${nume}</strong>, rezervarea ta la Vibe Caffè a fost <strong>confirmată</strong>.
+      <strong>${nume}</strong>, rezervarea ta la Vibe Coffee a fost <strong>confirmată</strong>.
     </p>
     <p style="margin:0 0 24px;color:#3B2507;font-size:15px;line-height:1.6">
       Te așteptăm <strong>${zi}, ${dataFmt}</strong> la ora <strong>${ora}</strong> — ${persoane}.
@@ -145,7 +145,7 @@ export async function trimiteEmailStatus({
       <strong>${nume}</strong>, din păcate rezervarea ta pentru <strong>${zi}, ${dataFmt}</strong> la ora <strong>${ora}</strong> nu a putut fi onorată.
     </p>
     <p style="margin:0 0 24px;color:#3B2507;opacity:0.7;font-size:15px;line-height:1.6">
-      Te invităm să încerci o altă dată — cu drag te așteptăm la Vibe Caffè.
+      Te invităm să încerci o altă dată — cu drag te așteptăm la Vibe Coffee.
     </p>
     <a href="https://vibe-website-theta.vercel.app/rezervari"
        style="display:inline-block;background:#2C1810;color:#F5E6C8;text-decoration:none;padding:12px 28px;border-radius:50px;font-size:14px;font-weight:600">
@@ -158,7 +158,7 @@ export async function trimiteEmailStatus({
     to: email,
     subject: confirmat
       ? `Rezervare confirmată — ${zi}, ${dataFmt} la ${ora}`
-      : `Rezervare Vibe Caffè — actualizare`,
+      : `Rezervare Vibe Coffee — actualizare`,
     html: emailLayout(content),
   });
 }
