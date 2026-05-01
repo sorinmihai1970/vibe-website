@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { salveazaRezervare } from '@/lib/rezervari';
 
 // Ore disponibile: 10:00 – 22:00, din 30 în 30 minute
 const ORE_DISPONIBILE: string[] = [];
@@ -138,7 +137,12 @@ export default function RezervariPage() {
     setLoading(true);
     setEroare('');
     try {
-      await salveazaRezervare({ ...form, data, ora });
+      const res = await fetch('/api/rezervare', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, data, ora }),
+      });
+      if (!res.ok) throw new Error();
       setSuccess(true);
     } catch {
       setEroare('A apărut o eroare. Te rugăm să încerci din nou.');

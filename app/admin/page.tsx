@@ -68,6 +68,19 @@ export default function AdminPage() {
   async function handleStatus(id: number, status: StatusRezervare) {
     setActionId(id);
     await schimbaStatus(id, status);
+    if (status === 'confirmat' || status === 'respins') {
+      const r = rezervari.find((x) => x.id === id);
+      if (r) {
+        await fetch('/api/email-status', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            nume: r.nume, email: r.email, data: r.data, ora: r.ora,
+            nr_persoane: r.numar_persoane, status,
+          }),
+        }).catch(() => {});
+      }
+    }
     await incarca();
     setActionId(null);
   }
