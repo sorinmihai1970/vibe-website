@@ -58,31 +58,35 @@ export default function Menu() {
     <section id="menu" className="py-12 md:py-20 px-6 bg-white" style={{ scrollMarginTop: '80px' }}>
       <div className="max-w-7xl mx-auto">
 
-        {/* Header */}
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-            Alege ce îți place
-          </h2>
-          <p className="text-lg md:text-xl text-gray-600">
-            Fiecare produs, pregătit cu grijă pentru tine
-          </p>
-        </div>
+        {/* Header + Tab-uri sticky */}
+        <div
+          className="sticky z-40 bg-white pb-4 pt-2"
+          style={{ top: '56px' }}
+        >
+          <div className="text-center mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-2">
+              Alege ce îți place
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600">
+              Fiecare produs, pregătit cu grijă pentru tine
+            </p>
+          </div>
 
-        {/* Tab-uri categorii */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8 md:mb-12">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => handleTabChange(cat)}
-              className={`px-6 py-3 rounded-full font-semibold text-sm transition-all duration-200 ${
-                activeTab === cat
-                  ? 'bg-amber-500 text-white shadow-md scale-105'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:scale-102'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
+          <div className="flex flex-wrap justify-center gap-3">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => handleTabChange(cat)}
+                className={`px-6 py-3 rounded-full font-semibold text-sm transition-all duration-200 ${
+                  activeTab === cat
+                    ? 'bg-amber-500 text-white shadow-md scale-105'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:scale-102'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Grid produse cu fade transition */}
