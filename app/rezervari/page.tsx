@@ -252,17 +252,25 @@ export default function RezervariPage() {
               <h2 className="text-2xl font-bold text-gray-800 mb-1">Alege ora</h2>
               <p className="text-gray-500 mb-6">Data selectată: <strong>{data}</strong></p>
               <div className="grid grid-cols-4 gap-3">
-                {ORE_DISPONIBILE.map((o) => (
-                  <button
-                    key={o}
-                    onClick={() => setOra(o)}
-                    className={`py-3 rounded-xl font-medium text-sm transition-all duration-200 ${
-                      ora === o ? 'bg-amber-600 text-white scale-105 shadow-md' : 'bg-amber-50 hover:bg-amber-100 text-amber-900'
-                    }`}
-                  >
-                    {o}
-                  </button>
-                ))}
+                {ORE_DISPONIBILE.map((o) => {
+                  const acum = new Date();
+                  const eAzi = data === formatData(acum);
+                  const [hh, mm] = o.split(':').map(Number);
+                  const oraTrecuta = eAzi && (hh < acum.getHours() || (hh === acum.getHours() && mm <= acum.getMinutes()));
+                  return (
+                    <button
+                      key={o}
+                      disabled={oraTrecuta}
+                      onClick={() => setOra(o)}
+                      className={`py-3 rounded-xl font-medium text-sm transition-all duration-200 ${
+                        oraTrecuta ? 'bg-gray-100 text-gray-300 cursor-not-allowed' :
+                        ora === o ? 'bg-amber-600 text-white scale-105 shadow-md' : 'bg-amber-50 hover:bg-amber-100 text-amber-900'
+                      }`}
+                    >
+                      {o}
+                    </button>
+                  );
+                })}
               </div>
               <div className="flex gap-4 mt-6">
                 <button onClick={() => setPas(1)} className="flex-1 py-4 border-2 border-gray-200 hover:border-amber-400 text-gray-600 font-semibold rounded-2xl transition-all">← Înapoi</button>
